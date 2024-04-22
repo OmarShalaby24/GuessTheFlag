@@ -1,0 +1,81 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "src/assets/fonts/Comme-VariableFont_wght.ttf",
+      "sha1": "3a46dec554b5b42a95ab3e63fe2e4fc8f8188f21"
+    },
+    {
+      "path": "src/assets/fonts/ConcertOne-Regular.ttf",
+      "sha1": "775f234b4c3dae77b69058e31944fa9fbdc818d2"
+    },
+    {
+      "path": "src/assets/fonts/Fonarto XT.ttf",
+      "sha1": "3a4bc65e41a5c443dfb07e84d2496081c1ba380c"
+    },
+    {
+      "path": "src/assets/fonts/Fonarto.ttf",
+      "sha1": "988e90cac8fcf33a86b896877f433ba72ce9bd50"
+    },
+    {
+      "path": "src/assets/fonts/Pacifico-Regular.ttf",
+      "sha1": "baca1fca7fe74b61cb33aa0da48ec1a3a77bcf49"
+    },
+    {
+      "path": "src/assets/fonts/Palanquin-Bold.ttf",
+      "sha1": "7f86d5b3165e027724326222ee6690fb3aa48a87"
+    },
+    {
+      "path": "src/assets/fonts/Palanquin-ExtraLight.ttf",
+      "sha1": "6f5a67a4069c3e1fc62ab803e61018305385e5f3"
+    },
+    {
+      "path": "src/assets/fonts/Palanquin-Light.ttf",
+      "sha1": "3a8f5380fe3098d3c662b288dc822362a222fe22"
+    },
+    {
+      "path": "src/assets/fonts/Palanquin-Medium.ttf",
+      "sha1": "c3d57a9fba13a2c89b50adf18c14de9a1eb3e885"
+    },
+    {
+      "path": "src/assets/fonts/Palanquin-Regular.ttf",
+      "sha1": "f2fbaef6bfb206dbfb826ac8eb7d3d3f9c46fc4f"
+    },
+    {
+      "path": "src/assets/fonts/Palanquin-SemiBold.ttf",
+      "sha1": "ae1a746860a7b93193e1d81819efaab59d549da6"
+    },
+    {
+      "path": "src/assets/fonts/Palanquin-Thin.ttf",
+      "sha1": "bcdbe156be36566f5d05bd461163eb1ac9d7b1b5"
+    },
+    {
+      "path": "src/assets/fonts/PalanquinDark-Bold.ttf",
+      "sha1": "c201fd42c9f66b6d2c79bb81d53ab9c075bea8f1"
+    },
+    {
+      "path": "src/assets/fonts/PalanquinDark-Medium.ttf",
+      "sha1": "01793504ee234cdb5d8fc47e1942b8f1a3800a7c"
+    },
+    {
+      "path": "src/assets/fonts/PalanquinDark-Regular.ttf",
+      "sha1": "7d0331962ae8f5913973f4ab6822a6a4a870c938"
+    },
+    {
+      "path": "src/assets/fonts/PalanquinDark-SemiBold.ttf",
+      "sha1": "18706bfdd37c17dba7112e4c3bf9cf6000ebe9a4"
+    },
+    {
+      "path": "src/assets/fonts/ProtestGuerrilla-Regular.ttf",
+      "sha1": "2b8eb6b339e3f1741b1024b8412c8d76c69c7aa8"
+    },
+    {
+      "path": "src/assets/fonts/ProtestRiot-Regular.ttf",
+      "sha1": "e8cec983abf34dcdca59df4a90bce74969fa564a"
+    },
+    {
+      "path": "src/assets/fonts/ProtestStrike-Regular.ttf",
+      "sha1": "30bcf6760fc8f0965496cd49b3ac739d5c459a52"
+    }
+  ]
+}

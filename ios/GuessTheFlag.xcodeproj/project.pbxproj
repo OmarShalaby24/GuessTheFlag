@@ -14,6 +14,25 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-GuessTheFlag-GuessTheFlagTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-GuessTheFlag-GuessTheFlagTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		87A8AD7FC9D64E22B47B0C00 /* Comme-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1D1B31811AF04C9A8892273D /* Comme-VariableFont_wght.ttf */; };
+		FA95F46E46004C05B293F645 /* ConcertOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 226710D0CA484AAAA0980231 /* ConcertOne-Regular.ttf */; };
+		881F68F94B574DDA827F8A33 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B040C3D6B604F099921F25C /* Pacifico-Regular.ttf */; };
+		D3DF7245F6CD4E7FA0F6C6C5 /* Palanquin-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DA8369B14BA54D4B92562B16 /* Palanquin-Bold.ttf */; };
+		AB32C5B563A1484FAECBAC8F /* Palanquin-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 457D7981882242E4B3C7BDD6 /* Palanquin-ExtraLight.ttf */; };
+		3D548ABD260E40D7BC5B6DA2 /* Palanquin-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E297CF9B4C14F61A2C8F5A1 /* Palanquin-Light.ttf */; };
+		9ED08B4847734E9CAE05B019 /* Palanquin-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E16CA86CC08474A86C15EA2 /* Palanquin-Medium.ttf */; };
+		FC257D57EABF4892848FAD38 /* Palanquin-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6AC1BF410EB945C387138C4A /* Palanquin-Regular.ttf */; };
+		2907F6E90D7245778D4ED0DD /* Palanquin-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 45A050BBBE0C428CBE8CBB99 /* Palanquin-SemiBold.ttf */; };
+		1BF9F67BB00942AEA3747E37 /* Palanquin-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 12A99783F3E64F5694358DD1 /* Palanquin-Thin.ttf */; };
+		0F568F1773EB4A7D9C620644 /* PalanquinDark-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 735923D930F24D97BB709CE0 /* PalanquinDark-Bold.ttf */; };
+		3AF01B2D5B094341BEFF94A3 /* PalanquinDark-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E676E6CED2149E8A4B678A2 /* PalanquinDark-Medium.ttf */; };
+		AEB9B287FDEF4A30A062C01A /* PalanquinDark-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3744831A7FDD4609BBDF9D11 /* PalanquinDark-Regular.ttf */; };
+		FE554D31E89142E7A9FE039E /* PalanquinDark-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DAA6EB90D02C42359226DF2E /* PalanquinDark-SemiBold.ttf */; };
+		738DD99B4F8141D5BAE79603 /* ProtestGuerrilla-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E261522584C04E7A9486E3AB /* ProtestGuerrilla-Regular.ttf */; };
+		7692AA7015DB4D1A9E77BC38 /* ProtestRiot-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F95149E9D55E4EE984E9E65D /* ProtestRiot-Regular.ttf */; };
+		C5D14E702E4B4347B14210DC /* ProtestStrike-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F2ED4EAD84633A59B8F9D /* ProtestStrike-Regular.ttf */; };
+		B4FB782500B8428B8DC5ED2B /* Fonarto XT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA03E4BD36CC4BB08004D4B7 /* Fonarto XT.ttf */; };
+		11363D894D54423480C0AE73 /* Fonarto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E14F9AB48D84285A260D3FB /* Fonarto.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +63,25 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GuessTheFlag/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-GuessTheFlag-GuessTheFlagTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuessTheFlag-GuessTheFlagTests.release.xcconfig"; path = "Target Support Files/Pods-GuessTheFlag-GuessTheFlagTests/Pods-GuessTheFlag-GuessTheFlagTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		1D1B31811AF04C9A8892273D /* Comme-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Comme-VariableFont_wght.ttf"; path = "../src/assets/fonts/Comme-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		226710D0CA484AAAA0980231 /* ConcertOne-Regular.ttf */ = {isa = PBXFileReference; name = "ConcertOne-Regular.ttf"; path = "../src/assets/fonts/ConcertOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2B040C3D6B604F099921F25C /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; name = "Pacifico-Regular.ttf"; path = "../src/assets/fonts/Pacifico-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DA8369B14BA54D4B92562B16 /* Palanquin-Bold.ttf */ = {isa = PBXFileReference; name = "Palanquin-Bold.ttf"; path = "../src/assets/fonts/Palanquin-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		457D7981882242E4B3C7BDD6 /* Palanquin-ExtraLight.ttf */ = {isa = PBXFileReference; name = "Palanquin-ExtraLight.ttf"; path = "../src/assets/fonts/Palanquin-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5E297CF9B4C14F61A2C8F5A1 /* Palanquin-Light.ttf */ = {isa = PBXFileReference; name = "Palanquin-Light.ttf"; path = "../src/assets/fonts/Palanquin-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8E16CA86CC08474A86C15EA2 /* Palanquin-Medium.ttf */ = {isa = PBXFileReference; name = "Palanquin-Medium.ttf"; path = "../src/assets/fonts/Palanquin-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6AC1BF410EB945C387138C4A /* Palanquin-Regular.ttf */ = {isa = PBXFileReference; name = "Palanquin-Regular.ttf"; path = "../src/assets/fonts/Palanquin-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		45A050BBBE0C428CBE8CBB99 /* Palanquin-SemiBold.ttf */ = {isa = PBXFileReference; name = "Palanquin-SemiBold.ttf"; path = "../src/assets/fonts/Palanquin-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		12A99783F3E64F5694358DD1 /* Palanquin-Thin.ttf */ = {isa = PBXFileReference; name = "Palanquin-Thin.ttf"; path = "../src/assets/fonts/Palanquin-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		735923D930F24D97BB709CE0 /* PalanquinDark-Bold.ttf */ = {isa = PBXFileReference; name = "PalanquinDark-Bold.ttf"; path = "../src/assets/fonts/PalanquinDark-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5E676E6CED2149E8A4B678A2 /* PalanquinDark-Medium.ttf */ = {isa = PBXFileReference; name = "PalanquinDark-Medium.ttf"; path = "../src/assets/fonts/PalanquinDark-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3744831A7FDD4609BBDF9D11 /* PalanquinDark-Regular.ttf */ = {isa = PBXFileReference; name = "PalanquinDark-Regular.ttf"; path = "../src/assets/fonts/PalanquinDark-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DAA6EB90D02C42359226DF2E /* PalanquinDark-SemiBold.ttf */ = {isa = PBXFileReference; name = "PalanquinDark-SemiBold.ttf"; path = "../src/assets/fonts/PalanquinDark-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E261522584C04E7A9486E3AB /* ProtestGuerrilla-Regular.ttf */ = {isa = PBXFileReference; name = "ProtestGuerrilla-Regular.ttf"; path = "../src/assets/fonts/ProtestGuerrilla-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F95149E9D55E4EE984E9E65D /* ProtestRiot-Regular.ttf */ = {isa = PBXFileReference; name = "ProtestRiot-Regular.ttf"; path = "../src/assets/fonts/ProtestRiot-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2A4F2ED4EAD84633A59B8F9D /* ProtestStrike-Regular.ttf */ = {isa = PBXFileReference; name = "ProtestStrike-Regular.ttf"; path = "../src/assets/fonts/ProtestStrike-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CA03E4BD36CC4BB08004D4B7 /* Fonarto XT.ttf */ = {isa = PBXFileReference; name = "Fonarto XT.ttf"; path = "../src/assets/fonts/Fonarto XT.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2E14F9AB48D84285A260D3FB /* Fonarto.ttf */ = {isa = PBXFileReference; name = "Fonarto.ttf"; path = "../src/assets/fonts/Fonarto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +160,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				48F20D8E6433461F93EBD5DC /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -147,6 +186,33 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		48F20D8E6433461F93EBD5DC /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				1D1B31811AF04C9A8892273D /* Comme-VariableFont_wght.ttf */,
+				226710D0CA484AAAA0980231 /* ConcertOne-Regular.ttf */,
+				2B040C3D6B604F099921F25C /* Pacifico-Regular.ttf */,
+				DA8369B14BA54D4B92562B16 /* Palanquin-Bold.ttf */,
+				457D7981882242E4B3C7BDD6 /* Palanquin-ExtraLight.ttf */,
+				5E297CF9B4C14F61A2C8F5A1 /* Palanquin-Light.ttf */,
+				8E16CA86CC08474A86C15EA2 /* Palanquin-Medium.ttf */,
+				6AC1BF410EB945C387138C4A /* Palanquin-Regular.ttf */,
+				45A050BBBE0C428CBE8CBB99 /* Palanquin-SemiBold.ttf */,
+				12A99783F3E64F5694358DD1 /* Palanquin-Thin.ttf */,
+				735923D930F24D97BB709CE0 /* PalanquinDark-Bold.ttf */,
+				5E676E6CED2149E8A4B678A2 /* PalanquinDark-Medium.ttf */,
+				3744831A7FDD4609BBDF9D11 /* PalanquinDark-Regular.ttf */,
+				DAA6EB90D02C42359226DF2E /* PalanquinDark-SemiBold.ttf */,
+				E261522584C04E7A9486E3AB /* ProtestGuerrilla-Regular.ttf */,
+				F95149E9D55E4EE984E9E65D /* ProtestRiot-Regular.ttf */,
+				2A4F2ED4EAD84633A59B8F9D /* ProtestStrike-Regular.ttf */,
+				CA03E4BD36CC4BB08004D4B7 /* Fonarto XT.ttf */,
+				2E14F9AB48D84285A260D3FB /* Fonarto.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -243,6 +309,25 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				87A8AD7FC9D64E22B47B0C00 /* Comme-VariableFont_wght.ttf in Resources */,
+				FA95F46E46004C05B293F645 /* ConcertOne-Regular.ttf in Resources */,
+				881F68F94B574DDA827F8A33 /* Pacifico-Regular.ttf in Resources */,
+				D3DF7245F6CD4E7FA0F6C6C5 /* Palanquin-Bold.ttf in Resources */,
+				AB32C5B563A1484FAECBAC8F /* Palanquin-ExtraLight.ttf in Resources */,
+				3D548ABD260E40D7BC5B6DA2 /* Palanquin-Light.ttf in Resources */,
+				9ED08B4847734E9CAE05B019 /* Palanquin-Medium.ttf in Resources */,
+				FC257D57EABF4892848FAD38 /* Palanquin-Regular.ttf in Resources */,
+				2907F6E90D7245778D4ED0DD /* Palanquin-SemiBold.ttf in Resources */,
+				1BF9F67BB00942AEA3747E37 /* Palanquin-Thin.ttf in Resources */,
+				0F568F1773EB4A7D9C620644 /* PalanquinDark-Bold.ttf in Resources */,
+				3AF01B2D5B094341BEFF94A3 /* PalanquinDark-Medium.ttf in Resources */,
+				AEB9B287FDEF4A30A062C01A /* PalanquinDark-Regular.ttf in Resources */,
+				FE554D31E89142E7A9FE039E /* PalanquinDark-SemiBold.ttf in Resources */,
+				738DD99B4F8141D5BAE79603 /* ProtestGuerrilla-Regular.ttf in Resources */,
+				7692AA7015DB4D1A9E77BC38 /* ProtestRiot-Regular.ttf in Resources */,
+				C5D14E702E4B4347B14210DC /* ProtestStrike-Regular.ttf in Resources */,
+				B4FB782500B8428B8DC5ED2B /* Fonarto XT.ttf in Resources */,
+				11363D894D54423480C0AE73 /* Fonarto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

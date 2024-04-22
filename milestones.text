@@ -1,0 +1,10 @@
+Add fonts:
+  - add fonts to the project (I added them in ./src/assets/fonts)
+  - create react-native.config.js file in root folder
+  - add these lines in the created file
+      module.export = {
+        assets: ['./src/assets/fonts/'],
+      }
+  - run "->npx react-native-assets"
+  - now you can add fonts in styles
+
