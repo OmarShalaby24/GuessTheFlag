@@ -1,20 +1,19 @@
 import React from 'react';
-import type {NativeStackScreenProps} from '@react-navigation/native-stack';
+import type {
+  NativeStackNavigationProp,
+  NativeStackScreenProps,
+} from '@react-navigation/native-stack';
 
 import {View, Text, StyleSheet, Platform, TouchableOpacity} from 'react-native';
 import Button from '../components/button';
+import type {RootStackParamList} from '../types.ts';
 
-type RootStackParamList = {
-  MainMenu: undefined;
-  Quiz: {numberOfQuestions: number};
-};
-
-type Props = NativeStackScreenProps<RootStackParamList, 'MainMenu'>;
+type Props = NativeStackScreenProps<RootStackParamList, 'MainMenuScreen'>;
 
 const MainMenu: React.FC<Props> = ({navigation}: Props) => {
   const startGame = () => {
     console.log('startGame function');
-    // navigation.navigate('Quiz', {screen: 'Quiz'});
+    navigation.navigate('Quiz', {numberOfQuestions: 10});
   };
   return (
     <View style={styles.container}>

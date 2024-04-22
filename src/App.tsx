@@ -8,10 +8,11 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 
-type RootStackParamList = {
-  MainMenuScreen: undefined;
-  Quiz: {numberOfQuestions: number};
-};
+import type {RootStackParamList} from './types.ts';
+// type RootStackParamList = {
+//   MainMenuScreen: undefined;
+//   Quiz: {numberOfQuestions: number};
+// };
 
 // type Props = NativeStackScreenProps<RootStackParamList, 'MainMenu'>;
 
