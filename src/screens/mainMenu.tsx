@@ -11,9 +11,14 @@ import type {RootStackParamList} from '../types.ts';
 type Props = NativeStackScreenProps<RootStackParamList, 'MainMenuScreen'>;
 
 const MainMenu: React.FC<Props> = ({navigation}: Props) => {
-  const startGame = () => {
+  const handleStartGame = () => {
     console.log('startGame function');
-    navigation.navigate('Quiz', {numberOfQuestions: 10});
+  };
+  const handleFlags = () => {
+    console.log('Show Flags');
+  };
+  const handleAbout = () => {
+    console.log('About the App');
   };
   return (
     <View style={styles.container}>
@@ -25,9 +30,9 @@ const MainMenu: React.FC<Props> = ({navigation}: Props) => {
         <Text style={[styles.text, styles.subText]}>Guess The Flag</Text>
       </View>
       <View style={styles.btnList}>
-        <Button Label="Start Game" onPress={startGame} />
-        <Button Label="Flags" onPress={startGame} />
-        <Button Label="About" onPress={startGame} />
+        <Button Label="Start Game" onPress={handleStartGame} />
+        <Button Label="Flags" onPress={handleFlags} />
+        <Button Label="About" onPress={handleAbout} />
       </View>
     </View>
   );
