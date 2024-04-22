@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import type {PropsWithChildren} from 'react';
 import {View, Text, StyleSheet, Platform, Image, FlatList} from 'react-native';
 
@@ -16,24 +16,23 @@ type QuizProps = PropsWithChildren<{}>;
 //TODO: Create Questions here
 
 const Quiz: React.FC = () => {
-  // const [questionCounter, setQuestionCounter] = useState(0);
   const [Answers, setAnswers] = useState<string[]>([
     'England',
-    'Brunei',
-    'Paraguay',
+    'Egypt',
+    'Palestine',
     'Kazakhstan',
   ]);
   const [Options, setOptions] = useState<string[][]>([
     ['Czechia', 'Venezuela', 'England'],
-    ['Brunei', 'Bahrain', 'Malta'],
-    ['Central African Republic', 'Paraguay', 'Scotland'],
+    ['Egypt', 'Bahrain', 'Malta'],
+    ['Central African Republic', 'Palestine', 'Scotland'],
     ['Kazakhstan', 'India', 'South Sudan'],
   ]);
   const [paths, setPaths] = useState<string[]>([
-    require('../assets/images/flags/England.png'),
-    require('../assets/images/flags/Brunei.png'),
-    require('../assets/images/flags/Paraguay.png'),
-    require('../assets/images/flags/Kazakhstan.png'),
+    require('../assets/images/flags/gb-eng.png'),
+    require('../assets/images/flags/eg.png'),
+    require('../assets/images/flags/ps.png'),
+    require('../assets/images/flags/kz.png'),
   ]);
 
   const [questionCounter, setQuestionCounter] = useState(0);
@@ -42,6 +41,8 @@ const Quiz: React.FC = () => {
   const checkAnswer = (option: string, questionNumber: number) => {
     console.log({option});
     console.log(Answers[questionNumber]);
+    console.log({questionNumber});
+    if (questionNumber < Answers.length - 1) scrollTo(questionNumber + 1);
     if (option === Answers[questionNumber]) {
       console.log('Correct');
       return true;
@@ -60,6 +61,13 @@ const Quiz: React.FC = () => {
       setPaths([...paths, `../assets/images/flags/${ans}.png`]);
     }
   };
+  const flatListRef = useRef<FlatList<any>>(null);
+  const scrollTo = (indexToScrollTo: number) =>
+    flatListRef.current?.scrollToIndex({
+      index: indexToScrollTo,
+      animated: true,
+    });
+
   useEffect(() => {
     console.log(Answers);
   }, []);
@@ -76,9 +84,10 @@ const Quiz: React.FC = () => {
           style={styles.questionSlide}
           data={Options}
           horizontal={true}
+          ref={flatListRef}
+          keyExtractor={item => item[0]}
           showsHorizontalScrollIndicator={false}
-          // scrollEnabled={false}
-          // scrollEventThrottle={}
+          scrollEnabled={false}
           pagingEnabled={true}
           renderItem={({item}) => (
             <Question

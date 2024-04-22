@@ -16,6 +16,7 @@ export const makeQuestion = () => {
   var count = countries.length;
 
   const answer = options[Math.floor(Math.random() * count)];
+  const code: string = answer.code;
   count--;
   options = options.filter(c => c !== answer);
   // console.log('after choosing an answer');
@@ -39,23 +40,25 @@ export const makeQuestion = () => {
     choices[randomPositionForAnswer],
     choices[0],
   ];
-  return {answer, choices};
+  return {answer, choices, code};
 };
 
 export const makeQuiz = (numberOfQuestions: number) => {
   var answers: string[] = [];
   var options: string[][] = [];
+  var codes: string[] = [];
 
   for (var i = 0; i < numberOfQuestions; i++) {
-    const {answer, choices} = makeQuestion();
+    const {answer, choices, code} = makeQuestion();
     if (answers.includes(answer.name)) {
       i--;
       continue;
     }
     answers.push(answer.name);
     options.push(choices);
+    codes.push(code);
   }
-  return {answers, options};
+  return {answers, options, codes};
 };
 
 console.log(makeQuiz(5));
