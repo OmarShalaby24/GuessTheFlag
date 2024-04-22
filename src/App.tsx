@@ -23,17 +23,17 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 const App: React.FC = props => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="MainMenuScreen">
-        <Stack.Screen
+      <Stack.Navigator initialRouteName="QuizScreen">
+        {/* <Stack.Screen
           name="MainMenuScreen"
           component={MainMenuScreen}
           options={{headerShown: false}}
-        />
-        {/* <Stack.Screen
-          name="Quiz"
+        /> */}
+        <Stack.Screen
+          name="QuizScreen"
           component={QuizScreen}
           options={{headerShown: false}}
-        /> */}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

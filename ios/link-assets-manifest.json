@@ -76,6 +76,1026 @@
     {
       "path": "src/assets/fonts/ProtestStrike-Regular.ttf",
       "sha1": "30bcf6760fc8f0965496cd49b3ac739d5c459a52"
+    },
+    {
+      "path": "src/assets/images/flags/Afghanistan.png",
+      "sha1": "c34d74c9f22009a50415b8f2743ff566f4e481ed"
+    },
+    {
+      "path": "src/assets/images/flags/Albania.png",
+      "sha1": "617cfae2840bf087c2a062bd235cbdf82ee0e7f9"
+    },
+    {
+      "path": "src/assets/images/flags/Algeria.png",
+      "sha1": "8488db9e9d4f4a189007e4982cbfc798f31901bc"
+    },
+    {
+      "path": "src/assets/images/flags/American Samoa.png",
+      "sha1": "213de0fadf100f9a093b46d24b834fa184287923"
+    },
+    {
+      "path": "src/assets/images/flags/Andorra.png",
+      "sha1": "8c9b929e8fe158a1e6e2af9009ff63f6949301ff"
+    },
+    {
+      "path": "src/assets/images/flags/Angola.png",
+      "sha1": "cc007cb63081d1482c9bd7737998af0b7eb71f39"
+    },
+    {
+      "path": "src/assets/images/flags/Anguilla.png",
+      "sha1": "b3be163ae8fff3a385772092110a600c97979139"
+    },
+    {
+      "path": "src/assets/images/flags/Antarctica.png",
+      "sha1": "74cc0ba9045f0033b6f24f9fc9dd96492d417739"
+    },
+    {
+      "path": "src/assets/images/flags/Antigua and Barbuda.png",
+      "sha1": "8991d7e5c339a3315b044d0ec6e0b5802e923948"
+    },
+    {
+      "path": "src/assets/images/flags/Argentina.png",
+      "sha1": "d310f8682454e34c2af84a21a2b53849269227d7"
+    },
+    {
+      "path": "src/assets/images/flags/Armenia.png",
+      "sha1": "068c731c2efb51c1c6ee5f93573257f81039fd6f"
+    },
+    {
+      "path": "src/assets/images/flags/Aruba.png",
+      "sha1": "a8761b8f9cac7639f2930970c850a4c15589ea72"
+    },
+    {
+      "path": "src/assets/images/flags/Australia.png",
+      "sha1": "f86cacfb9bb2356d8f9cbadd2e757da9d01568af"
+    },
+    {
+      "path": "src/assets/images/flags/Austria.png",
+      "sha1": "4082a65d11da35097730d6fbb9c0810e8579f264"
+    },
+    {
+      "path": "src/assets/images/flags/Azerbaijan.png",
+      "sha1": "1df16ddfcd02e4a85a92a1aa77c78033157d46f7"
+    },
+    {
+      "path": "src/assets/images/flags/Bahamas.png",
+      "sha1": "62662a6686afe32ce15e8e3e9aff6fb6defc7da9"
+    },
+    {
+      "path": "src/assets/images/flags/Bahrain.png",
+      "sha1": "0a29532250720ce9e14c47bb71348b8e3ccf6d9e"
+    },
+    {
+      "path": "src/assets/images/flags/Bangladesh.png",
+      "sha1": "ef6545c549acf52ef7e34ecd3e63cc892107b01a"
+    },
+    {
+      "path": "src/assets/images/flags/Barbados.png",
+      "sha1": "5b25c22825bc519e111565715ca3e96c0803acdd"
+    },
+    {
+      "path": "src/assets/images/flags/Belarus.png",
+      "sha1": "9eeab9a02cbecdd79bf5c7d80e9efe301103e290"
+    },
+    {
+      "path": "src/assets/images/flags/Belgium.png",
+      "sha1": "9850f5e6fdeeff190cc56f6b720bbcd10d8b324b"
+    },
+    {
+      "path": "src/assets/images/flags/Belize.png",
+      "sha1": "945dd3439f818799980b14f9ef876373e6636e31"
+    },
+    {
+      "path": "src/assets/images/flags/Benin.png",
+      "sha1": "8efba3697034c0a8f19fff0288cc87d3bbf551f1"
+    },
+    {
+      "path": "src/assets/images/flags/Bermuda.png",
+      "sha1": "a1dd449e7398b4b46ae40c119abebb524a173851"
+    },
+    {
+      "path": "src/assets/images/flags/Bhutan.png",
+      "sha1": "020050ecdc6d3d0c3117d6fff22366c07bf8afb8"
+    },
+    {
+      "path": "src/assets/images/flags/Bolivia.png",
+      "sha1": "4e53b0b2b464214a6348483e92952a9fbf39fd15"
+    },
+    {
+      "path": "src/assets/images/flags/Bosnia and Herzegovina.png",
+      "sha1": "0f67922c51ea7e2029f75506e6c39ebb027649ed"
+    },
+    {
+      "path": "src/assets/images/flags/Botswana.png",
+      "sha1": "649508b3b118fd82f016f716ab577952c0e1bb22"
+    },
+    {
+      "path": "src/assets/images/flags/Bouvet Island.png",
+      "sha1": "e94c7409f4ebf0f0a0cefda2d004bea55cff9cd9"
+    },
+    {
+      "path": "src/assets/images/flags/Brazil.png",
+      "sha1": "2aa1fd2437ad07647d38e480228990473de37b84"
+    },
+    {
+      "path": "src/assets/images/flags/British Indian Ocean Territory.png",
+      "sha1": "210349794926f4e05bb0dfd8b7d41fe20cfe1f34"
+    },
+    {
+      "path": "src/assets/images/flags/British Virgin Islands.png",
+      "sha1": "c3ad020a41988953bdba3e4e4a7af296ebb99a6e"
+    },
+    {
+      "path": "src/assets/images/flags/Brunei.png",
+      "sha1": "d62a97e7ffefaa40125e79eb1d13f69f01b79890"
+    },
+    {
+      "path": "src/assets/images/flags/Bulgaria.png",
+      "sha1": "211e3ae98babafcdb3948336578fac718ffce839"
+    },
+    {
+      "path": "src/assets/images/flags/Burkina Faso.png",
+      "sha1": "80aedfc198cc2a53ea3717ddd26cf79c9c7aa095"
+    },
+    {
+      "path": "src/assets/images/flags/Burundi.png",
+      "sha1": "3f57e4fb7f412799ffbe3da09133bd9ca5d6a97d"
+    },
+    {
+      "path": "src/assets/images/flags/Cambodia.png",
+      "sha1": "ec4079202b0a002f238ab1b76f19b87e862b6b6e"
+    },
+    {
+      "path": "src/assets/images/flags/Cameroon.png",
+      "sha1": "6e6d2baca96ea92e6fd257fcf543355a5bab9ed7"
+    },
+    {
+      "path": "src/assets/images/flags/Canada.png",
+      "sha1": "794d8477916b101c20422820dd8898751fc5ec9c"
+    },
+    {
+      "path": "src/assets/images/flags/Cape Verde.png",
+      "sha1": "1cec2cd6cb258674453ec2e5eb18224a775d6d65"
+    },
+    {
+      "path": "src/assets/images/flags/Caribbean Netherlands.png",
+      "sha1": "e768678f14e9ca9cfdeff75c959821a77c945cdf"
+    },
+    {
+      "path": "src/assets/images/flags/Cayman Islands.png",
+      "sha1": "4101857e80131ab276cedec235c19914f77951ad"
+    },
+    {
+      "path": "src/assets/images/flags/Central African Republic.png",
+      "sha1": "76209509daeca297eaaf5d41b3f47cede6226996"
+    },
+    {
+      "path": "src/assets/images/flags/Chad.png",
+      "sha1": "bb4254b8744c68c800fa4c6582d5f87a0d997ada"
+    },
+    {
+      "path": "src/assets/images/flags/Chile.png",
+      "sha1": "1e9ac7538ae79d778e9fc9e22ed8c72c3082155f"
+    },
+    {
+      "path": "src/assets/images/flags/China.png",
+      "sha1": "7fb42d5f95dc20cea85a0fe1ea77b187433290df"
+    },
+    {
+      "path": "src/assets/images/flags/Christmas Island.png",
+      "sha1": "553b56e15b7cfd39bc402231688c5c38ea9c838c"
+    },
+    {
+      "path": "src/assets/images/flags/Cocos (Keeling) Islands.png",
+      "sha1": "d502560e0987929e07a52b35240026ee5bc7c0c8"
+    },
+    {
+      "path": "src/assets/images/flags/Colombia.png",
+      "sha1": "0eb692322684e2f1e47db1a3b3b9e43e8790e098"
+    },
+    {
+      "path": "src/assets/images/flags/Comoros.png",
+      "sha1": "531a0d33058f1210bbfe9f5bfebd63546d2f2fd8"
+    },
+    {
+      "path": "src/assets/images/flags/Cook Islands.png",
+      "sha1": "fb50af16748f4b9cc2f0e0cf848e4e4f45dc1a50"
+    },
+    {
+      "path": "src/assets/images/flags/Costa Rica.png",
+      "sha1": "6c86bf7d6906059885c769a8f60f80a6b63c2e5a"
+    },
+    {
+      "path": "src/assets/images/flags/Croatia.png",
+      "sha1": "3d94e6f4a45d1f33a2ab1779a7e2276d7e393955"
+    },
+    {
+      "path": "src/assets/images/flags/Cuba.png",
+      "sha1": "6d851b24a7736ba4950bf5bdea064c6cb931c11d"
+    },
+    {
+      "path": "src/assets/images/flags/CuraÃ§ao.png",
+      "sha1": "85d92cd46066491c193302556698dbe6c4a7cf04"
+    },
+    {
+      "path": "src/assets/images/flags/Cyprus.png",
+      "sha1": "54b14bc9ad7c117c71c26d069b7967b1fb96213f"
+    },
+    {
+      "path": "src/assets/images/flags/Czechia.png",
+      "sha1": "1fb394755567490242183e3d798683622ce20761"
+    },
+    {
+      "path": "src/assets/images/flags/CÃ´te d'Ivoire (Ivory Coast).png",
+      "sha1": "f985e693d72b00d253954c85331a06ff42fbc98a"
+    },
+    {
+      "path": "src/assets/images/flags/Denmark.png",
+      "sha1": "e0d599f962837fcba7d27aabfd300793a93b4901"
+    },
+    {
+      "path": "src/assets/images/flags/Djibouti.png",
+      "sha1": "6e603b573c61d02bfd6d2de66da554d307d3e1c9"
+    },
+    {
+      "path": "src/assets/images/flags/Dominica.png",
+      "sha1": "1d5f776964d0f4161373ec5e58f645d6c6250405"
+    },
+    {
+      "path": "src/assets/images/flags/Dominican Republic.png",
+      "sha1": "b15ea9651b221a91388ca1bac761bcca967bd06d"
+    },
+    {
+      "path": "src/assets/images/flags/DR Congo.png",
+      "sha1": "43dc4fc02ee07962bf532f3a9fe23cd3141887fd"
+    },
+    {
+      "path": "src/assets/images/flags/Ecuador.png",
+      "sha1": "906012e5d66767a3d05ef84ac6d19b3fcfdc1f90"
+    },
+    {
+      "path": "src/assets/images/flags/Egypt.png",
+      "sha1": "335d5f62a06bcffe8a06741e0e3367a623d524ed"
+    },
+    {
+      "path": "src/assets/images/flags/El Salvador.png",
+      "sha1": "cd5c3ea96f84b4f0f0791546a33b5a13a6913110"
+    },
+    {
+      "path": "src/assets/images/flags/England.png",
+      "sha1": "029aad53fac7161a9aef7547294be4b60dff586d"
+    },
+    {
+      "path": "src/assets/images/flags/Equatorial Guinea.png",
+      "sha1": "086a0f11ebd2c117fe5cf116336f94f61cf1602a"
+    },
+    {
+      "path": "src/assets/images/flags/Eritrea.png",
+      "sha1": "0952bc3296fa061215ba1cbf7df6bbdbdbca2ae8"
+    },
+    {
+      "path": "src/assets/images/flags/Estonia.png",
+      "sha1": "16854bb7cf618eb8653c6ee08ee9e22a939b5ea3"
+    },
+    {
+      "path": "src/assets/images/flags/Eswatini (Swaziland).png",
+      "sha1": "d300a3ace0d0f9878dcac263918c7a3f30ad8f90"
+    },
+    {
+      "path": "src/assets/images/flags/Ethiopia.png",
+      "sha1": "97823eea47b139fbdfbc5aac1961db6c131755fd"
+    },
+    {
+      "path": "src/assets/images/flags/European Union.png",
+      "sha1": "75b5eef60bd0b6b928322ac6ed87ffff56b4dc87"
+    },
+    {
+      "path": "src/assets/images/flags/Falkland Islands.png",
+      "sha1": "e9d22fbf073b7be8df0292739e012116089538a5"
+    },
+    {
+      "path": "src/assets/images/flags/Faroe Islands.png",
+      "sha1": "140c37d75307a800a3eb5d34f357fe5f46e79c69"
+    },
+    {
+      "path": "src/assets/images/flags/Fiji.png",
+      "sha1": "7d75d0cac819949f921daadcae2ecf7e3e15997b"
+    },
+    {
+      "path": "src/assets/images/flags/Finland.png",
+      "sha1": "8908dce04dc49b357e3eee63607768a3137b55a3"
+    },
+    {
+      "path": "src/assets/images/flags/France.png",
+      "sha1": "a50e99a2a92dcf4d4ef51377f03ba50964180259"
+    },
+    {
+      "path": "src/assets/images/flags/French Guiana.png",
+      "sha1": "8fbcbe4d07b86f01f53a8cb28cb1b28ade079801"
+    },
+    {
+      "path": "src/assets/images/flags/French Polynesia.png",
+      "sha1": "73d32bc09497473ec6f8aaacfc10446ed6010fd9"
+    },
+    {
+      "path": "src/assets/images/flags/French Southern and Antarctic Lands.png",
+      "sha1": "91ee58aaa02daa22a3ba332aaf7d17c8573fc077"
+    },
+    {
+      "path": "src/assets/images/flags/Gabon.png",
+      "sha1": "23b7a6fe512dd4b0c5d8487a285be7be5b118d25"
+    },
+    {
+      "path": "src/assets/images/flags/Gambia.png",
+      "sha1": "316338b8e7a60f8251687cf6d589cadcae047e50"
+    },
+    {
+      "path": "src/assets/images/flags/Georgia.png",
+      "sha1": "f8b4541db9aa8322173227b78d788292d9e81f00"
+    },
+    {
+      "path": "src/assets/images/flags/Germany.png",
+      "sha1": "5836a5895d965a17530bcfea56cfda6b7eff63bc"
+    },
+    {
+      "path": "src/assets/images/flags/Ghana.png",
+      "sha1": "d399f2dc06eec1343a50360c5c35832d6d14b988"
+    },
+    {
+      "path": "src/assets/images/flags/Gibraltar.png",
+      "sha1": "2a298443f3d73f44c14afa7f873de6b5b7ebb82c"
+    },
+    {
+      "path": "src/assets/images/flags/Greece.png",
+      "sha1": "f47b9c6b3e8910f96232162fa22c6ccaf74ea8ab"
+    },
+    {
+      "path": "src/assets/images/flags/Greenland.png",
+      "sha1": "dbb68fb2a8b94b7d42e09d503cc85581b59a7d3b"
+    },
+    {
+      "path": "src/assets/images/flags/Grenada.png",
+      "sha1": "cadf1fc5da3eff7f36dc93adc3458a524ca8d2ab"
+    },
+    {
+      "path": "src/assets/images/flags/Guadeloupe.png",
+      "sha1": "483c37e0660236709928e72d694867699b58c9d3"
+    },
+    {
+      "path": "src/assets/images/flags/Guam.png",
+      "sha1": "e25033a0b1da70b3cfec8560f89f2bdfafcb4a81"
+    },
+    {
+      "path": "src/assets/images/flags/Guatemala.png",
+      "sha1": "5df3b51b67f182aeaeb10e2f0ab231de0d4ee420"
+    },
+    {
+      "path": "src/assets/images/flags/Guernsey.png",
+      "sha1": "1d65a280053208fda3425864e6205ccf6fa8bb4c"
+    },
+    {
+      "path": "src/assets/images/flags/Guinea-Bissau.png",
+      "sha1": "8bdbf6d8a09ded642dc50e2ed51bc05607c38143"
+    },
+    {
+      "path": "src/assets/images/flags/Guinea.png",
+      "sha1": "f13c4a249d45081d6d5b79f4e37836de1554c11d"
+    },
+    {
+      "path": "src/assets/images/flags/Guyana.png",
+      "sha1": "8741cc705189d0e3d48d7ab6b566addffae9a863"
+    },
+    {
+      "path": "src/assets/images/flags/Haiti.png",
+      "sha1": "fefe60e5837862e691c41a60442b1d174737f763"
+    },
+    {
+      "path": "src/assets/images/flags/Heard Island and McDonald Islands.png",
+      "sha1": "f1522759c338badcd0fcc855a634bdae09b4d806"
+    },
+    {
+      "path": "src/assets/images/flags/Honduras.png",
+      "sha1": "db45975d80467092b68f9793b5baa067a9b69196"
+    },
+    {
+      "path": "src/assets/images/flags/Hong Kong.png",
+      "sha1": "322de1a982833ec8edc35fa6ac1c011d4684f17e"
+    },
+    {
+      "path": "src/assets/images/flags/Hungary.png",
+      "sha1": "30ed5f1a7a5c6b2b044ac7e2084d2c02ca1da2fa"
+    },
+    {
+      "path": "src/assets/images/flags/Iceland.png",
+      "sha1": "754e3ba92e8085cf4e11f1ec94f2c14462367b58"
+    },
+    {
+      "path": "src/assets/images/flags/India.png",
+      "sha1": "a45b2dec297db64c72a0bea0260ea02db860946a"
+    },
+    {
+      "path": "src/assets/images/flags/Indonesia.png",
+      "sha1": "b8dca1bc328b63903d3d54a876cab62d864444d5"
+    },
+    {
+      "path": "src/assets/images/flags/Iran.png",
+      "sha1": "22a1543d1b71b7c561a356bc1d377afa6b9d57fe"
+    },
+    {
+      "path": "src/assets/images/flags/Iraq.png",
+      "sha1": "ed9eb072961d84d9563e016715dc9110fd2a2377"
+    },
+    {
+      "path": "src/assets/images/flags/Ireland.png",
+      "sha1": "1a81cfd06fa1143e5b039b852cd5478b4ab5816f"
+    },
+    {
+      "path": "src/assets/images/flags/Isle of Man.png",
+      "sha1": "fcb39e96901428eee2569f993f334665f4626a5f"
+    },
+    {
+      "path": "src/assets/images/flags/Italy.png",
+      "sha1": "88a3d185fbcc09402e95a75b370fa41192f0dff5"
+    },
+    {
+      "path": "src/assets/images/flags/Jamaica.png",
+      "sha1": "3d02fab450b5f75fd541d796a91d8e623c955055"
+    },
+    {
+      "path": "src/assets/images/flags/Japan.png",
+      "sha1": "33ba155e66611070822ce9404cfdbaf1a569f2a5"
+    },
+    {
+      "path": "src/assets/images/flags/Jersey.png",
+      "sha1": "ad4aec668aa9f25d14334a77cb4960758305d206"
+    },
+    {
+      "path": "src/assets/images/flags/Jordan.png",
+      "sha1": "f0fe5ae8a078be75663bbc3424b9cc19eab426a5"
+    },
+    {
+      "path": "src/assets/images/flags/Kazakhstan.png",
+      "sha1": "20f693510f5f4ebbd2a88c427171ef1aff050182"
+    },
+    {
+      "path": "src/assets/images/flags/Kenya.png",
+      "sha1": "da2bb26f36e2340e70fb7ead3669ba5f6d4ed101"
+    },
+    {
+      "path": "src/assets/images/flags/Kiribati.png",
+      "sha1": "70d04089659a6b71af3532718b7c2251348d9fab"
+    },
+    {
+      "path": "src/assets/images/flags/Kosovo.png",
+      "sha1": "2373a01ea22e99700fb9fdfcb80494eeea6131f7"
+    },
+    {
+      "path": "src/assets/images/flags/Kuwait.png",
+      "sha1": "6f459e5c69baae1504ef71d03ddb48b04792157f"
+    },
+    {
+      "path": "src/assets/images/flags/Kyrgyzstan.png",
+      "sha1": "ab4b739340e38b5b187d0eb0f4e6a6c517832cc0"
+    },
+    {
+      "path": "src/assets/images/flags/Laos.png",
+      "sha1": "f0d55846439523159ea4c7353d0157e25f1a8fe2"
+    },
+    {
+      "path": "src/assets/images/flags/Latvia.png",
+      "sha1": "f35ef2818ee6cc62e61dae3e81fea9885f29b875"
+    },
+    {
+      "path": "src/assets/images/flags/Lebanon.png",
+      "sha1": "5ed68009811b0e1aab9b5b2345c3fa8fb9296372"
+    },
+    {
+      "path": "src/assets/images/flags/Lesotho.png",
+      "sha1": "14aa6fd8df58012cd18f2b6a37e7a13c13f03416"
+    },
+    {
+      "path": "src/assets/images/flags/Liberia.png",
+      "sha1": "1cbdacecb8e37da611f4f26788d26f485a36a95b"
+    },
+    {
+      "path": "src/assets/images/flags/Libya.png",
+      "sha1": "6dfe06ba80bbb8fa480e203f2f83a31935ca7d34"
+    },
+    {
+      "path": "src/assets/images/flags/Liechtenstein.png",
+      "sha1": "6336910adf42fd02ca9407da7a705bfb6f719970"
+    },
+    {
+      "path": "src/assets/images/flags/Lithuania.png",
+      "sha1": "2653e5471d5e60b80892a4ce5d464138a11da31c"
+    },
+    {
+      "path": "src/assets/images/flags/Luxembourg.png",
+      "sha1": "36576ddaeef0e55c712b4a33895fc89a650f2912"
+    },
+    {
+      "path": "src/assets/images/flags/Macau.png",
+      "sha1": "9101fbb3c6ba36d79ab3441e30cb162d4b6ae33e"
+    },
+    {
+      "path": "src/assets/images/flags/Madagascar.png",
+      "sha1": "bcf44e0a82472d3c8d4de33b179eb53773441adb"
+    },
+    {
+      "path": "src/assets/images/flags/Malawi.png",
+      "sha1": "a04640452f86d5373890fd50b1cb19b327016937"
+    },
+    {
+      "path": "src/assets/images/flags/Malaysia.png",
+      "sha1": "ac0d2227f5479f67f1df6638dee3c677e6312f0a"
+    },
+    {
+      "path": "src/assets/images/flags/Maldives.png",
+      "sha1": "87eb8939cf2af5ec82d771b63ad1f80f5d42412c"
+    },
+    {
+      "path": "src/assets/images/flags/Mali.png",
+      "sha1": "76dcc3107f27f3160de8594eb85d838e86797f96"
+    },
+    {
+      "path": "src/assets/images/flags/Malta.png",
+      "sha1": "ff13b6e0ec340d56019d82840d7ae6f9062b79b2"
+    },
+    {
+      "path": "src/assets/images/flags/Marshall Islands.png",
+      "sha1": "26de7b1c254447a1718d6d13dd4948920dec82d1"
+    },
+    {
+      "path": "src/assets/images/flags/Martinique.png",
+      "sha1": "b1303ba3c5701a55362be10d3d6a0fa29165ee01"
+    },
+    {
+      "path": "src/assets/images/flags/Mauritania.png",
+      "sha1": "6bc86dc9c24b99412afb0029cbbd924fc81da2ae"
+    },
+    {
+      "path": "src/assets/images/flags/Mauritius.png",
+      "sha1": "2ba9b22ff571199224421cb1fc5a06954eec9999"
+    },
+    {
+      "path": "src/assets/images/flags/Mayotte.png",
+      "sha1": "5395e9abac7336ca4ebdfa01a01e3dad8cfa3159"
+    },
+    {
+      "path": "src/assets/images/flags/Mexico.png",
+      "sha1": "51d9d6b6ef41ad1d2508d325eb8186936f21da76"
+    },
+    {
+      "path": "src/assets/images/flags/Micronesia.png",
+      "sha1": "c5d06e39b505b4c48a2fee61ee90d3cd2fef3a78"
+    },
+    {
+      "path": "src/assets/images/flags/Moldova.png",
+      "sha1": "5db34b552a3d052bd0f1e6b13dc449e9e5e61768"
+    },
+    {
+      "path": "src/assets/images/flags/Monaco.png",
+      "sha1": "3c902689dbea37174cbee6e391293ebc489b7516"
+    },
+    {
+      "path": "src/assets/images/flags/Mongolia.png",
+      "sha1": "4a3880e1c22bcc1467d33ae544504cfacb1fa5ab"
+    },
+    {
+      "path": "src/assets/images/flags/Montenegro.png",
+      "sha1": "c3087155189c442972fc83037217da2760f0b395"
+    },
+    {
+      "path": "src/assets/images/flags/Montserrat.png",
+      "sha1": "46b1bee57ac4c780f14cd4184b3401e9dc61fd0a"
+    },
+    {
+      "path": "src/assets/images/flags/Morocco.png",
+      "sha1": "df728b099187fa9dfd02ca2e622241b6aa6e622c"
+    },
+    {
+      "path": "src/assets/images/flags/Mozambique.png",
+      "sha1": "2397e50a06a0c6fe23fefd8ccc6cdd7b0a18bf87"
+    },
+    {
+      "path": "src/assets/images/flags/Myanmar.png",
+      "sha1": "a9b988de610f17d2592d1f6fd1b462942bb4d85d"
+    },
+    {
+      "path": "src/assets/images/flags/Namibia.png",
+      "sha1": "8a2559632c8a1623c0bb2c9c051528c49abab631"
+    },
+    {
+      "path": "src/assets/images/flags/Nauru.png",
+      "sha1": "9fa23a036526ff6f1a9060df21ffe0973aae13e7"
+    },
+    {
+      "path": "src/assets/images/flags/Nepal.png",
+      "sha1": "3e597e737d4891a822017c294c55028337a4159e"
+    },
+    {
+      "path": "src/assets/images/flags/Netherlands.png",
+      "sha1": "67c776aceb72fab7f6e95d76f68b69dcb56605a8"
+    },
+    {
+      "path": "src/assets/images/flags/New Caledonia.png",
+      "sha1": "2a7541eb49264098a41be848ac2a83b8e87eda0e"
+    },
+    {
+      "path": "src/assets/images/flags/New Zealand.png",
+      "sha1": "0a3070ed17f8fea2a95e03c3bbfbcef1091f808c"
+    },
+    {
+      "path": "src/assets/images/flags/Nicaragua.png",
+      "sha1": "09a68f4aa230b27ad5f9b2b7a06788c8f95df575"
+    },
+    {
+      "path": "src/assets/images/flags/Niger.png",
+      "sha1": "2bd6756a97bd3e259eece4904eebee230726892b"
+    },
+    {
+      "path": "src/assets/images/flags/Nigeria.png",
+      "sha1": "98a3ac2f2e6bf58c91c18feebce0d931f2e71054"
+    },
+    {
+      "path": "src/assets/images/flags/Niue.png",
+      "sha1": "c8d73f99488b226bbb7df43a48877e0c5c0a7ab6"
+    },
+    {
+      "path": "src/assets/images/flags/Norfolk Island.png",
+      "sha1": "9adb715d2d3b9df9c19e7965168ffc21ec08068e"
+    },
+    {
+      "path": "src/assets/images/flags/North Korea.png",
+      "sha1": "46f57d3dfb6d3dbbbd3fc1c8fd36da12a8358aa5"
+    },
+    {
+      "path": "src/assets/images/flags/North Macedonia.png",
+      "sha1": "e71f770ad984a2ca0025dc8da3f1ab7283bb728b"
+    },
+    {
+      "path": "src/assets/images/flags/Northern Ireland.png",
+      "sha1": "e5015bd31e7ef3bb88a8d515174ab246a3aa1325"
+    },
+    {
+      "path": "src/assets/images/flags/Northern Mariana Islands.png",
+      "sha1": "a2bc8a07f5c2b1149ef77d73399c61cbc9989980"
+    },
+    {
+      "path": "src/assets/images/flags/Norway.png",
+      "sha1": "e94c7409f4ebf0f0a0cefda2d004bea55cff9cd9"
+    },
+    {
+      "path": "src/assets/images/flags/Oman.png",
+      "sha1": "1695a9f5878230ad5ebd6605aa07ef36a1a90752"
+    },
+    {
+      "path": "src/assets/images/flags/Pakistan.png",
+      "sha1": "1164616eaaca8f363c24f9a6f73e6452a1b1e786"
+    },
+    {
+      "path": "src/assets/images/flags/Palau.png",
+      "sha1": "f9d0dcf1b8a0e2f4615788b0983a39e8a2f65432"
+    },
+    {
+      "path": "src/assets/images/flags/Palestine.png",
+      "sha1": "f779ad367aa7d2006c881aa0f04639e280209270"
+    },
+    {
+      "path": "src/assets/images/flags/Panama.png",
+      "sha1": "761cbaa7a18447f76eb12605ddc463676a916078"
+    },
+    {
+      "path": "src/assets/images/flags/Papua New Guinea.png",
+      "sha1": "a0b145d5a972798bc88bd5176d2a27bb873708ad"
+    },
+    {
+      "path": "src/assets/images/flags/Paraguay.png",
+      "sha1": "3ace7241078225085aec14b50b844a10ca2f4787"
+    },
+    {
+      "path": "src/assets/images/flags/Peru.png",
+      "sha1": "7386df4cca0ba39a48a01f4d0043d683e4e767ba"
+    },
+    {
+      "path": "src/assets/images/flags/Philippines.png",
+      "sha1": "d4fc02a35a7f9abcae2571faa6f9870db39f9546"
+    },
+    {
+      "path": "src/assets/images/flags/Pitcairn Islands.png",
+      "sha1": "51558aaf3ee888497dfc8a2e8b782030e2afbbdf"
+    },
+    {
+      "path": "src/assets/images/flags/Poland.png",
+      "sha1": "e7840109dab8517d54f8dc4968c95724cebb0e5c"
+    },
+    {
+      "path": "src/assets/images/flags/Portugal.png",
+      "sha1": "82189094d9444e29dce2d4e610a84fcda2346f63"
+    },
+    {
+      "path": "src/assets/images/flags/Puerto Rico.png",
+      "sha1": "709ea17320252d4c1c3e757a519c327668c5ac73"
+    },
+    {
+      "path": "src/assets/images/flags/Qatar.png",
+      "sha1": "b22b67b97758b91bfc1e35f2156fdf266acc70b5"
+    },
+    {
+      "path": "src/assets/images/flags/Republic of the Congo.png",
+      "sha1": "ffec5a02919430ba48f50eb19fcb34b5e981adea"
+    },
+    {
+      "path": "src/assets/images/flags/Romania.png",
+      "sha1": "bf28656bf8ca388f68b4238d35666807ce22078b"
+    },
+    {
+      "path": "src/assets/images/flags/Russia.png",
+      "sha1": "1fb5f635ce630e08ac761d33f2858199ea706d63"
+    },
+    {
+      "path": "src/assets/images/flags/Rwanda.png",
+      "sha1": "514b932379d7bcea3e349d71e9d662941aabd0ad"
+    },
+    {
+      "path": "src/assets/images/flags/RÃ©union.png",
+      "sha1": "8371dbdfbaf82ef8ebc98483ce0abc640dfd9008"
+    },
+    {
+      "path": "src/assets/images/flags/Saint BarthÃ©lemy.png",
+      "sha1": "d386319428e88ae28d46e10b20b4af31eed870fe"
+    },
+    {
+      "path": "src/assets/images/flags/Saint Helena, Ascension and Tristan da Cunha.png",
+      "sha1": "494d61f5a27549bffe46b5c1c05a5de05ab896bf"
+    },
+    {
+      "path": "src/assets/images/flags/Saint Kitts and Nevis.png",
+      "sha1": "b0a9640d086c1eeb852d138028b345ad92ed53d3"
+    },
+    {
+      "path": "src/assets/images/flags/Saint Lucia.png",
+      "sha1": "155032f05a56402f0dd2675bf10a14306bbcd54f"
+    },
+    {
+      "path": "src/assets/images/flags/Saint Martin.png",
+      "sha1": "a50e99a2a92dcf4d4ef51377f03ba50964180259"
+    },
+    {
+      "path": "src/assets/images/flags/Saint Pierre and Miquelon.png",
+      "sha1": "24910450b25d66dabb7778a20f14d18a48a4526b"
+    },
+    {
+      "path": "src/assets/images/flags/Saint Vincent and the Grenadines.png",
+      "sha1": "cded4df17db4c73b9d9939727e3962530b4efa76"
+    },
+    {
+      "path": "src/assets/images/flags/Samoa.png",
+      "sha1": "06b49c73aafe482001efdca8f590baaf63650844"
+    },
+    {
+      "path": "src/assets/images/flags/San Marino.png",
+      "sha1": "6f9ae13343a0635f1b72044951e21421a947a14c"
+    },
+    {
+      "path": "src/assets/images/flags/Saudi Arabia.png",
+      "sha1": "a8873bd3c587156c70daf1323d05036e53f475ee"
+    },
+    {
+      "path": "src/assets/images/flags/Scotland.png",
+      "sha1": "f9b0cb1958c0398b5f347f6cbd324f0c1386bff6"
+    },
+    {
+      "path": "src/assets/images/flags/Senegal.png",
+      "sha1": "b43da0aa2a80aed4eab6becba644eedb88096afa"
+    },
+    {
+      "path": "src/assets/images/flags/Serbia.png",
+      "sha1": "166842af99f44943682919ed6961d87058d84f90"
+    },
+    {
+      "path": "src/assets/images/flags/Seychelles.png",
+      "sha1": "483d34d9edecac8bdc663cda8c9bfd219d79ba4b"
+    },
+    {
+      "path": "src/assets/images/flags/Sierra Leone.png",
+      "sha1": "e87a7e8e16d31905330c1abfb92b6a60201c140c"
+    },
+    {
+      "path": "src/assets/images/flags/Singapore.png",
+      "sha1": "401d887d8a9d3543b1d0b4df35a1b332b63d6f8a"
+    },
+    {
+      "path": "src/assets/images/flags/Sint Maarten.png",
+      "sha1": "28d267c8cb61f694a9c84dff2efbd89dfa8d92de"
+    },
+    {
+      "path": "src/assets/images/flags/Slovakia.png",
+      "sha1": "639708e25b565f284a2df3baa30a221542836ddc"
+    },
+    {
+      "path": "src/assets/images/flags/Slovenia.png",
+      "sha1": "b25a69c70c24954d25bb157c9f65df22016e9f6e"
+    },
+    {
+      "path": "src/assets/images/flags/Solomon Islands.png",
+      "sha1": "fe3145df9f384b2a3ff7d39b912746f9b416ade8"
+    },
+    {
+      "path": "src/assets/images/flags/Somalia.png",
+      "sha1": "189c66df5b781af73f0a93028881f2fa3812326a"
+    },
+    {
+      "path": "src/assets/images/flags/South Africa.png",
+      "sha1": "fd99a1fcc3f6ffc503b89fea8192fe4cbabed686"
+    },
+    {
+      "path": "src/assets/images/flags/South Georgia.png",
+      "sha1": "0b06f3c9738775f8c0d0c86d2842b87f3d1285d0"
+    },
+    {
+      "path": "src/assets/images/flags/South Korea.png",
+      "sha1": "200f8e25936598d660a4b0c36c6fa4660a571bba"
+    },
+    {
+      "path": "src/assets/images/flags/South Sudan.png",
+      "sha1": "c5c87828ace2ea3d926b12b3fd9624af79dab337"
+    },
+    {
+      "path": "src/assets/images/flags/Spain.png",
+      "sha1": "5a5d6712eb439bbfe067f69c545fcf84373b6f7a"
+    },
+    {
+      "path": "src/assets/images/flags/Sri Lanka.png",
+      "sha1": "8f9fcde22eb5a5428bf9ac00143856052ae46316"
+    },
+    {
+      "path": "src/assets/images/flags/Sudan.png",
+      "sha1": "ffdfe0443b5d0f6abd8e5a787635ffe98125e3ea"
+    },
+    {
+      "path": "src/assets/images/flags/Suriname.png",
+      "sha1": "6316d223af28ada0af631cef7bae89c970ad006b"
+    },
+    {
+      "path": "src/assets/images/flags/Svalbard and Jan Mayen.png",
+      "sha1": "e94c7409f4ebf0f0a0cefda2d004bea55cff9cd9"
+    },
+    {
+      "path": "src/assets/images/flags/Sweden.png",
+      "sha1": "62cc0958dbb4920648eef897e505210a41338434"
+    },
+    {
+      "path": "src/assets/images/flags/Switzerland.png",
+      "sha1": "d73839ba63a15d1694d1da2b6e841875ba99f38d"
+    },
+    {
+      "path": "src/assets/images/flags/Syria.png",
+      "sha1": "71075624a0a7d66bbed59e0a196fc1bd85585507"
+    },
+    {
+      "path": "src/assets/images/flags/SÃ£o TomÃ© and PrÃ­ncipe.png",
+      "sha1": "27e1167ae81b0abcb7817c31ea7e2bd1c0083660"
+    },
+    {
+      "path": "src/assets/images/flags/Taiwan.png",
+      "sha1": "4f03c66543ad00647fbc9e3e97a29e6a6388d701"
+    },
+    {
+      "path": "src/assets/images/flags/Tajikistan.png",
+      "sha1": "f74519f42d172d891d0d2694130d1284d5b662b7"
+    },
+    {
+      "path": "src/assets/images/flags/Tanzania.png",
+      "sha1": "5a7b53f8436029560d76a56cdb445e9e1c227f07"
+    },
+    {
+      "path": "src/assets/images/flags/Thailand.png",
+      "sha1": "31094a62021527efda8a87922d844bb27eb0bdf4"
+    },
+    {
+      "path": "src/assets/images/flags/Timor-Leste.png",
+      "sha1": "5daa51fea1d2a7c5a4039cab54ebb03c573da7a7"
+    },
+    {
+      "path": "src/assets/images/flags/Togo.png",
+      "sha1": "e2da007426f0910d92c1208913a843d84a72d1b4"
+    },
+    {
+      "path": "src/assets/images/flags/Tokelau.png",
+      "sha1": "82fe1f27ec08cce2099b9c34afd70b7c8076adfd"
+    },
+    {
+      "path": "src/assets/images/flags/Tonga.png",
+      "sha1": "63881fb82178db45fcb7dde0dfc80985d7014c55"
+    },
+    {
+      "path": "src/assets/images/flags/Trinidad and Tobago.png",
+      "sha1": "3df419079709259c886fa49d29450289db333e62"
+    },
+    {
+      "path": "src/assets/images/flags/Tunisia.png",
+      "sha1": "b81324176da031c25730d56408992c3b924d82f7"
+    },
+    {
+      "path": "src/assets/images/flags/Turkey.png",
+      "sha1": "52f08097faaa13fdb9108c7d5f1f81cdecdc72ab"
+    },
+    {
+      "path": "src/assets/images/flags/Turkmenistan.png",
+      "sha1": "c32219da5223a217e90be2b04815645a36f672cf"
+    },
+    {
+      "path": "src/assets/images/flags/Turks and Caicos Islands.png",
+      "sha1": "66e09786338cb55ee066aa7a735bd4c997a94cd7"
+    },
+    {
+      "path": "src/assets/images/flags/Tuvalu.png",
+      "sha1": "354d53685f4e0a380be307a9aac107b7533a461c"
+    },
+    {
+      "path": "src/assets/images/flags/Uganda.png",
+      "sha1": "fce80145fd853bd81252c0d1725147229f048ac2"
+    },
+    {
+      "path": "src/assets/images/flags/Ukraine.png",
+      "sha1": "98ec1e876e52e6e51a7fb8d982647d7ef3a1c85c"
+    },
+    {
+      "path": "src/assets/images/flags/United Arab Emirates.png",
+      "sha1": "4f7765aec81d4b91c8dedcaa9abe73e858517b13"
+    },
+    {
+      "path": "src/assets/images/flags/United Kingdom.png",
+      "sha1": "aa7ea9fb270cd3f2bae763cc01c1605a5a964869"
+    },
+    {
+      "path": "src/assets/images/flags/United Nations.png",
+      "sha1": "082715c7df6f8313bb5b72726dadd3af7aefda31"
+    },
+    {
+      "path": "src/assets/images/flags/United States Minor Outlying Islands.png",
+      "sha1": "b70515f1ef2fe42a73a1e3fc998a0dd882b78a0d"
+    },
+    {
+      "path": "src/assets/images/flags/United States Virgin Islands.png",
+      "sha1": "67671a173ea142e0a4b1603d74131edf03c34175"
+    },
+    {
+      "path": "src/assets/images/flags/United States.png",
+      "sha1": "b70515f1ef2fe42a73a1e3fc998a0dd882b78a0d"
+    },
+    {
+      "path": "src/assets/images/flags/Uruguay.png",
+      "sha1": "bfbc9dc5edbccebd455d1dcdc58f694c2c74254c"
+    },
+    {
+      "path": "src/assets/images/flags/Uzbekistan.png",
+      "sha1": "bdb91e1f79a31ede83b024b7b1f1d21eb7b8cb8b"
+    },
+    {
+      "path": "src/assets/images/flags/Vanuatu.png",
+      "sha1": "b48bf9d0cd93fe5210a4cbc788c33b017f85c387"
+    },
+    {
+      "path": "src/assets/images/flags/Vatican City (Holy See).png",
+      "sha1": "1ececcb56d42330741f5e66f894c91d957ce62d8"
+    },
+    {
+      "path": "src/assets/images/flags/Venezuela.png",
+      "sha1": "55daca766e2eeb650842c1791b7eed7204f1973b"
+    },
+    {
+      "path": "src/assets/images/flags/Vietnam.png",
+      "sha1": "94233e75464134b3e62907442137dbcf135cd511"
+    },
+    {
+      "path": "src/assets/images/flags/Wales.png",
+      "sha1": "f80ad4ee1d10c31c0cb137bbb590dcc8bbc1d171"
+    },
+    {
+      "path": "src/assets/images/flags/Wallis and Futuna.png",
+      "sha1": "8383a52bbc27faab6fdc6792be000c7d640bf472"
+    },
+    {
+      "path": "src/assets/images/flags/Western Sahara.png",
+      "sha1": "ac41c6a5719d427f8c7eea7b4e033dcaa5c813b2"
+    },
+    {
+      "path": "src/assets/images/flags/Yemen.png",
+      "sha1": "28a031049840b607b56858504c963f039b5f99c8"
+    },
+    {
+      "path": "src/assets/images/flags/Zambia.png",
+      "sha1": "ce4e64d171673b0de91c044665014365f93cb559"
+    },
+    {
+      "path": "src/assets/images/flags/Zimbabwe.png",
+      "sha1": "e37fdb80e4bb2a3a6b4b38ea2fdbcd39a1573aa4"
+    },
+    {
+      "path": "src/assets/images/flags/Ã…land Islands.png",
+      "sha1": "dcc460333f4ad1d7fddd01170f6efb1ca1e1c1ff"
     }
   ]
 }

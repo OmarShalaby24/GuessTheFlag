@@ -3,9 +3,12 @@ import type {PropsWithChildren} from 'react';
 import {View, Text, StyleSheet, Platform, Image, FlatList} from 'react-native';
 
 // import Header from '../components/header.tsx';
-// import {makeQuiz} from '../utils/makeQuestion.ts';
+import {makeQuiz} from '../utils/makeQuestion.ts';
 // import Footer from '../components/footer.tsx';
 import {SafeAreaView} from 'react-native-safe-area-context';
+import Header from '../components/header';
+import Question from '../components/question';
+import Footer from '../components/footer';
 // import Question from '../components/question.tsx';
 
 type QuizProps = PropsWithChildren<{}>;
@@ -27,10 +30,10 @@ const Quiz: React.FC = () => {
     ['Kazakhstan', 'India', 'South Sudan'],
   ]);
   const [paths, setPaths] = useState<string[]>([
-    '../assets/images/flags/England.png',
-    '../assets/images/flags/Brunei.png',
-    '../assets/images/flags/Paraguay.png',
-    '../assets/images/flags/Kazakhstan.png',
+    require('../assets/images/flags/England.png'),
+    require('../assets/images/flags/Brunei.png'),
+    require('../assets/images/flags/Paraguay.png'),
+    require('../assets/images/flags/Kazakhstan.png'),
   ]);
 
   const [questionCounter, setQuestionCounter] = useState(0);
@@ -64,7 +67,7 @@ const Quiz: React.FC = () => {
   return (
     <View style={styles.container}>
       <Header
-        numberOfQuestions={numberOfQuestions}
+        numberOfQuestions={10}
         correctAnswers={correctAnswers}
         questionCounter={questionCounter}
       />
@@ -73,6 +76,9 @@ const Quiz: React.FC = () => {
           style={styles.questionSlide}
           data={Options}
           horizontal={true}
+          showsHorizontalScrollIndicator={false}
+          // scrollEnabled={false}
+          // scrollEventThrottle={}
           pagingEnabled={true}
           renderItem={({item}) => (
             <Question
@@ -82,22 +88,6 @@ const Quiz: React.FC = () => {
               questionNumber={Options.indexOf(item)}
               path={paths[Options.indexOf(item)]}
             />
-            // <Questions
-            //   choices={item}
-            //   CorrectAnswers={Answers}
-            //   checkAnswer={item}
-            // />
-            // <View style={styles.TempContainer}>
-            //   <Text>Question head{item}</Text>
-            //   <Image
-            //     style={styles.TempImage}
-            //     source={require('../assets/images/test/eg640.png')}
-            //   />
-            //   <Text>Option 1</Text>
-            //   <Text>Option 2</Text>
-            //   <Text>Option 3</Text>
-            //   <Text>Option 4</Text>
-            // </View>
           )}
         />
       </SafeAreaView>
