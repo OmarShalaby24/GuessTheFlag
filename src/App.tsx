@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import type {PropsWithChildren} from 'react';
 import {StyleSheet} from 'react-native';
 
@@ -21,14 +21,15 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 //TODO: Load All data here
 
 const App: React.FC = props => {
+  useEffect(() => {});
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="QuizScreen">
-        {/* <Stack.Screen
+      <Stack.Navigator initialRouteName="MainMenuScreen">
+        <Stack.Screen
           name="MainMenuScreen"
           component={MainMenuScreen}
           options={{headerShown: false}}
-        /> */}
+        />
         <Stack.Screen
           name="QuizScreen"
           component={QuizScreen}

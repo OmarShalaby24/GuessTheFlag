@@ -1,13 +1,3 @@
-// const countries = [
-//   'Egypt',
-//   'Morocco',
-//   'Tunisia',
-//   'Sudan',
-//   'Spain',
-//   'England',
-//   'France',
-// ];
-
 import * as countries from './Countries.json';
 // console.log(countries[0]);
 
@@ -46,7 +36,7 @@ export const makeQuestion = () => {
 export const makeQuiz = (numberOfQuestions: number) => {
   var answers: string[] = [];
   var options: string[][] = [];
-  var codes: string[] = [];
+  var imagePaths: string[] = [];
 
   for (var i = 0; i < numberOfQuestions; i++) {
     const {answer, choices, code} = makeQuestion();
@@ -56,9 +46,9 @@ export const makeQuiz = (numberOfQuestions: number) => {
     }
     answers.push(answer.name);
     options.push(choices);
-    codes.push(code);
+    imagePaths.push(`../assets/images/flags/${code}.png`);
   }
-  return {answers, options, codes};
+  return {answers, options, imagePaths};
 };
 
 console.log(makeQuiz(5));

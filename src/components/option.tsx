@@ -9,11 +9,11 @@ type OptionProps = PropsWithChildren<{
   questionNumber: number;
 }>;
 
-const Option = ({
+const Option: React.FC<OptionProps> = ({
   value,
   checkAnswer,
   questionNumber,
-}: OptionProps): React.JSX.Element => {
+}) => {
   const [buttonStyle, setButtonStyle] = useState<{}>({
     ...styles.container,
     ...styles.shadowBox,

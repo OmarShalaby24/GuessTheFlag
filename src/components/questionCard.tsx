@@ -7,9 +7,10 @@ type QuestionCardProps = PropsWithChildren<{
 
 //TODO: when user clicks on the flag he gets info about the country
 
-const defaultImage = '../assets/images/flags/Palestine.png';
+const defaultImage = '../assets/images/flags/eg.png';
 
 const QuestionCard = ({country}: QuestionCardProps): React.JSX.Element => {
+  const path = '../';
   return (
     <View style={[styles.container, styles.shadowBox]}>
       <View style={styles.title}>
@@ -18,7 +19,13 @@ const QuestionCard = ({country}: QuestionCardProps): React.JSX.Element => {
       <View style={[styles.imageContainer, styles.shadowBox]}>
         {country !== '' ? (
           <Image style={[styles.image]} source={+country} />
-        ) : null}
+        ) : // <Image
+        //   style={[styles.image]}
+        //   source={{
+        //     uri: 'file:///D:/Projects/React%20Native/GuessTheFlag/src/assets/images/flags/eg.png',
+        //   }}
+        // />
+        null}
       </View>
     </View>
   );

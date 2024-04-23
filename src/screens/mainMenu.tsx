@@ -1,18 +1,16 @@
 import React from 'react';
-import type {
-  NativeStackNavigationProp,
-  NativeStackScreenProps,
-} from '@react-navigation/native-stack';
+import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 
-import {View, Text, StyleSheet, Platform, TouchableOpacity} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import Button from '../components/button';
 import type {RootStackParamList} from '../types.ts';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'MainMenuScreen'>;
+type Props = NativeStackScreenProps<RootStackParamList, 'QuizScreen'>;
 
 const MainMenu: React.FC<Props> = ({navigation}: Props) => {
   const handleStartGame = () => {
     console.log('startGame function');
+    navigation.navigate('QuizScreen', {numberOfQuestions: 10});
   };
   const handleFlags = () => {
     console.log('Show Flags');
@@ -62,7 +60,6 @@ const styles = StyleSheet.create({
   GameName: {
     fontFamily: 'Fonarto XT',
     textShadowOffset: {width: 3, height: 3},
-    // textShadowRadius: 10,
     letterSpacing: 10,
     fontSize: 110,
   },

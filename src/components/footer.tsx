@@ -3,19 +3,16 @@ import type {PropsWithChildren} from 'react';
 import {View, Text, TouchableOpacity, StyleSheet, Platform} from 'react-native';
 import Button from './button';
 
-type FooterProps = PropsWithChildren<{}>;
+type FooterProps = PropsWithChildren<{
+  buttonPress: Function;
+}>;
 
 //TODO: make a skip button for the current question and ask the question again at the end
 
-const Footer = (): React.JSX.Element => {
+const Footer: React.FC<FooterProps> = ({buttonPress}) => {
   return (
     <View style={styles.container}>
-      <Button
-        Label="End Quiz"
-        onPress={() => {
-          console.log('Exit');
-        }}
-      />
+      <Button Label="End Quiz" onPress={buttonPress} />
     </View>
   );
 };
