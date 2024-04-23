@@ -7,6 +7,7 @@ import {
   Platform,
   FlatList,
   ActivityIndicator,
+  Dimensions,
 } from 'react-native';
 
 // import {makeQuiz} from '../utils/makeQuestion.ts';
@@ -16,6 +17,7 @@ import Question from '../components/question';
 import Footer from '../components/footer';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import type {RootStackParamList} from '../types';
+import TextFiled from '../assets/common/Text';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'MainMenuScreen'>;
 
@@ -50,21 +52,46 @@ const Quiz: React.FC<Props> = ({navigation}: Props) => {
     }
   };
 
+  const [timeCountDown, setTimeCountDown] = useState<number>(10);
+
   const generateQuiz = () => {
-    setAnswers(['England', 'Egypt', 'Palestine', 'Kazakhstan']);
+    setAnswers([
+      'England',
+      'Egypt',
+      'Palestine',
+      'Martinique',
+      'United States Virgin Islands',
+      'United Nations',
+      'Marshall Islands',
+      'Wallis and Futuna',
+      'Colombia',
+      'Czechia',
+    ]);
     setOptions([
       ['Czechia', 'Venezuela', 'England'],
       ['Egypt', 'Bahrain', 'Malta'],
       ['Central African Republic', 'Palestine', 'Scotland'],
-      ['Kazakhstan', 'India', 'South Sudan'],
+      ['Martinique', 'Tokelau', 'Poland'],
+      ['United States Virgin Islands', 'Malawi', 'Hong Kong'],
+      ['Micronesia', 'Albania', 'United Nations'],
+      ['Marshall Islands', 'Finland', 'Sint Maarten'],
+      ['Venezuela', 'Wallis and Futuna', 'Oman'],
+      ['Cyprus', 'Colombia', 'Slovenia'],
+      ['Czechia', 'Algeria', 'Ukraine'],
     ]);
     setPaths([
       require('../assets/images/flags/gb-eng.png'),
       require('../assets/images/flags/eg.png'),
       require('../assets/images/flags/ps.png'),
-      require('../assets/images/flags/kz.png'),
+      require('../assets/images/flags/mq.png'),
+      require('../assets/images/flags/vi.png'),
+      require('../assets/images/flags/un.png'),
+      require('../assets/images/flags/mh.png'),
+      require('../assets/images/flags/wf.png'),
+      require('../assets/images/flags/co.png'),
+      require('../assets/images/flags/cz.png'),
     ]);
-
+    setInterval(() => {}, 1000);
     // const {answers, options, imagePaths} = makeQuiz(5);
     // setAnswers(answers);
     // setOptions(options);
@@ -91,7 +118,9 @@ const Quiz: React.FC<Props> = ({navigation}: Props) => {
     <View style={styles.container}>
       {isLoading ? (
         <View style={styles.loadingView}>
-          <Text style={[styles.text, styles.loadingText]}>Loading</Text>
+          <TextFiled style={[styles.text, styles.loadingText]}>
+            Loading
+          </TextFiled>
           <ActivityIndicator size="small" color="#010a4b" animating />
         </View>
       ) : (
@@ -100,6 +129,7 @@ const Quiz: React.FC<Props> = ({navigation}: Props) => {
             numberOfQuestions={10}
             correctAnswers={correctAnswers}
             questionCounter={questionCounter}
+            timer={timeCountDown}
           />
           <SafeAreaView>
             <FlatList
@@ -107,7 +137,7 @@ const Quiz: React.FC<Props> = ({navigation}: Props) => {
               data={Options}
               horizontal={true}
               ref={flatListRef}
-              keyExtractor={item => item[0]}
+              keyExtractor={item => item}
               showsHorizontalScrollIndicator={false}
               scrollEnabled={false}
               pagingEnabled={true}
@@ -133,8 +163,9 @@ export default Quiz;
 
 const styles = StyleSheet.create({
   questionSlide: {
-    height: '73%',
+    height: '70%',
     marginVertical: 20,
+    // borderWidth: 1,
     // alignItems: 'center',
   },
   container: {
@@ -181,7 +212,6 @@ const styles = StyleSheet.create({
     height: '100%',
   },
   loadingText: {
-    fontFamily: 'Fonarto',
     fontSize: 50,
   },
 });

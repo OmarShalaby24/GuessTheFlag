@@ -51,4 +51,4 @@ export const makeQuiz = (numberOfQuestions: number) => {
   return {answers, options, imagePaths};
 };
 
-console.log(makeQuiz(5));
+console.log(makeQuiz(10));

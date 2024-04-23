@@ -1,6 +1,14 @@
 import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
-import {Image, Platform, StyleSheet, Text, View} from 'react-native';
+import {
+  Dimensions,
+  Image,
+  Platform,
+  StyleSheet,
+  Text,
+  View,
+} from 'react-native';
+import TextFiled from '../assets/common/Text';
 type QuestionCardProps = PropsWithChildren<{
   country: string;
 }>;
@@ -14,7 +22,7 @@ const QuestionCard = ({country}: QuestionCardProps): React.JSX.Element => {
   return (
     <View style={[styles.container, styles.shadowBox]}>
       <View style={styles.title}>
-        <Text style={styles.question}>Guess the Country's Flag:</Text>
+        <TextFiled style={styles.question}>Guess the Country's Flag:</TextFiled>
       </View>
       <View style={[styles.imageContainer, styles.shadowBox]}>
         {country !== '' ? (
@@ -39,8 +47,10 @@ const styles = StyleSheet.create({
   image: {
     borderColor: 'black',
     borderWidth: 1,
-    height: 120,
-    aspectRatio: 9 / 5,
+    // height: 120,
+    height: Dimensions.get('window').height / 5.5,
+    width: Dimensions.get('window').width / 1.8,
+    // aspectRatio: 9 / 5,
     borderRadius: 10,
   },
   container: {
@@ -57,7 +67,6 @@ const styles = StyleSheet.create({
   },
   question: {
     fontSize: 20,
-    fontWeight: 'bold',
     color: '#043fa7',
   },
   imageContainer: {

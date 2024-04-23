@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 import {View, Text, StyleSheet, Platform} from 'react-native';
+import TextFiled from '../assets/common/Text';
 
 type HeaderBadgeProps = PropsWithChildren<{
   title: string;
@@ -10,8 +11,8 @@ type HeaderBadgeProps = PropsWithChildren<{
 const HeaderBadge = ({title, value}: HeaderBadgeProps) => {
   return (
     <View style={[styles.badge, styles.shadowBox]}>
-      <Text style={styles.text}>{title} : </Text>
-      <Text style={styles.text}>{value}</Text>
+      <TextFiled style={styles.text}>{title} : </TextFiled>
+      <TextFiled style={styles.text}>{value}</TextFiled>
     </View>
   );
 };
@@ -22,6 +23,7 @@ const styles = StyleSheet.create({
   text: {
     color: '#043fa7',
     // padding: 10,
+    fontSize: 13,
   },
   badge: {
     backgroundColor: '#e7f9f9',

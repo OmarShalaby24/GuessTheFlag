@@ -33,6 +33,10 @@
 		C5D14E702E4B4347B14210DC /* ProtestStrike-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F2ED4EAD84633A59B8F9D /* ProtestStrike-Regular.ttf */; };
 		B4FB782500B8428B8DC5ED2B /* Fonarto XT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA03E4BD36CC4BB08004D4B7 /* Fonarto XT.ttf */; };
 		11363D894D54423480C0AE73 /* Fonarto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E14F9AB48D84285A260D3FB /* Fonarto.ttf */; };
+		D3B2BE8F19B54F85BFC001F3 /* Fredoka dingbats.otf in Resources */ = {isa = PBXBuildFile; fileRef = B39C1CDD1E844AA4836C897B /* Fredoka dingbats.otf */; };
+		B2398125CD80457A922ACB55 /* FredokaOne-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AC66849673174435AA047A11 /* FredokaOne-Regular.otf */; };
+		CF27AE208BA440308D07EBB0 /* Fredoka dingbats.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF299FEEB3FE4A4CBCFC9C73 /* Fredoka dingbats.ttf */; };
+		99946F7A2D3B4E8FB0141BEA /* FredokaOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36B593E9F13B4DE680FBD1CB /* FredokaOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,10 @@
 		2A4F2ED4EAD84633A59B8F9D /* ProtestStrike-Regular.ttf */ = {isa = PBXFileReference; name = "ProtestStrike-Regular.ttf"; path = "../src/assets/fonts/ProtestStrike-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		CA03E4BD36CC4BB08004D4B7 /* Fonarto XT.ttf */ = {isa = PBXFileReference; name = "Fonarto XT.ttf"; path = "../src/assets/fonts/Fonarto XT.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		2E14F9AB48D84285A260D3FB /* Fonarto.ttf */ = {isa = PBXFileReference; name = "Fonarto.ttf"; path = "../src/assets/fonts/Fonarto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B39C1CDD1E844AA4836C897B /* Fredoka dingbats.otf */ = {isa = PBXFileReference; name = "Fredoka dingbats.otf"; path = "../src/assets/fonts/Fredoka dingbats.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AC66849673174435AA047A11 /* FredokaOne-Regular.otf */ = {isa = PBXFileReference; name = "FredokaOne-Regular.otf"; path = "../src/assets/fonts/FredokaOne-Regular.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		DF299FEEB3FE4A4CBCFC9C73 /* Fredoka dingbats.ttf */ = {isa = PBXFileReference; name = "Fredoka dingbats.ttf"; path = "../src/assets/fonts/Fredoka dingbats.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		36B593E9F13B4DE680FBD1CB /* FredokaOne-Regular.ttf */ = {isa = PBXFileReference; name = "FredokaOne-Regular.ttf"; path = "../src/assets/fonts/FredokaOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +217,10 @@
 				2A4F2ED4EAD84633A59B8F9D /* ProtestStrike-Regular.ttf */,
 				CA03E4BD36CC4BB08004D4B7 /* Fonarto XT.ttf */,
 				2E14F9AB48D84285A260D3FB /* Fonarto.ttf */,
+				B39C1CDD1E844AA4836C897B /* Fredoka dingbats.otf */,
+				AC66849673174435AA047A11 /* FredokaOne-Regular.otf */,
+				DF299FEEB3FE4A4CBCFC9C73 /* Fredoka dingbats.ttf */,
+				36B593E9F13B4DE680FBD1CB /* FredokaOne-Regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -328,6 +340,10 @@
 				C5D14E702E4B4347B14210DC /* ProtestStrike-Regular.ttf in Resources */,
 				B4FB782500B8428B8DC5ED2B /* Fonarto XT.ttf in Resources */,
 				11363D894D54423480C0AE73 /* Fonarto.ttf in Resources */,
+				D3B2BE8F19B54F85BFC001F3 /* Fredoka dingbats.otf in Resources */,
+				B2398125CD80457A922ACB55 /* FredokaOne-Regular.otf in Resources */,
+				CF27AE208BA440308D07EBB0 /* Fredoka dingbats.ttf in Resources */,
+				99946F7A2D3B4E8FB0141BEA /* FredokaOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

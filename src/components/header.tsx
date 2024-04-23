@@ -7,18 +7,21 @@ type HeaderProps = PropsWithChildren<{
   numberOfQuestions: any;
   questionCounter: number;
   correctAnswers: number;
+  timer: number;
 }>;
 
 const Header = ({
   numberOfQuestions,
   questionCounter,
   correctAnswers,
+  timer,
 }: HeaderProps): React.JSX.Element => {
+  const timeValue = timer > 9 ? timer : '0' + timer;
   return (
     <View style={[styles.container, styles.shadowBox]}>
       <HeaderBadge title={'Questions'} value={questionCounter + '/10'} />
       <HeaderBadge title={'Correct'} value={correctAnswers.toString()} />
-      <HeaderBadge title={'Timer'} value={'00:59'} />
+      <HeaderBadge title={'Timer'} value={`00:${timeValue}`} />
     </View>
   );
 };
@@ -32,7 +35,7 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
   },
   shadowBox: {
     ...Platform.select({

@@ -1,13 +1,4 @@
 "use strict";
-// const countries = [
-//   'Egypt',
-//   'Morocco',
-//   'Tunisia',
-//   'Sudan',
-//   'Spain',
-//   'England',
-//   'France',
-// ];
 var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
         if (ar || !(i in from)) {
@@ -55,7 +46,7 @@ exports.makeQuestion = makeQuestion;
 var makeQuiz = function (numberOfQuestions) {
     var answers = [];
     var options = [];
-    var codes = [];
+    var imagePaths = [];
     for (var i = 0; i < numberOfQuestions; i++) {
         var _a = (0, exports.makeQuestion)(), answer = _a.answer, choices = _a.choices, code = _a.code;
         if (answers.includes(answer.name)) {
@@ -64,9 +55,9 @@ var makeQuiz = function (numberOfQuestions) {
         }
         answers.push(answer.name);
         options.push(choices);
-        codes.push(code);
+        imagePaths.push("../assets/images/flags/".concat(code, ".png"));
     }
-    return { answers: answers, options: options, codes: codes };
+    return { answers: answers, options: options, imagePaths: imagePaths };
 };
 exports.makeQuiz = makeQuiz;
-console.log((0, exports.makeQuiz)(5));
+console.log((0, exports.makeQuiz)(10));

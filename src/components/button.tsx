@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 
 import {View, TouchableOpacity, Text, StyleSheet, Platform} from 'react-native';
+import TextFiled from '../assets/common/Text';
 
 type ButtonProps = PropsWithChildren<{
   Label: string;
@@ -26,7 +27,7 @@ const Button = ({Label, onPress}: ButtonProps): React.JSX.Element => {
       onPressOut={onPressOut}
       onPress={() => onPress()}
       style={[buttonStyle, styles.shadowBox]}>
-      <Text style={styles.btnText}>{Label}</Text>
+      <TextFiled style={styles.btnText}>{Label}</TextFiled>
     </TouchableOpacity>
   );
 };
@@ -47,7 +48,7 @@ const styles = StyleSheet.create({
   },
   btnText: {
     fontSize: 15,
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     color: '#e7f9f9',
   },
   shadowBox: {

@@ -1,7 +1,7 @@
 import React from 'react';
 import type {PropsWithChildren} from 'react';
 
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import Option from './option';
 import QuestionCard from './questionCard';
 
@@ -39,11 +39,14 @@ export default Question;
 
 const styles = StyleSheet.create({
   container: {
+    // borderColor: 'red',
     // borderWidth: 2,
     alignItems: 'center',
+    justifyContent: 'center',
     // marginHorizontal: 50,
     // height: '20%',
-    width: 360,
+    // width: 360,
+    width: Dimensions.get('window').width,
     // paddingBottom: 40,
   },
 });

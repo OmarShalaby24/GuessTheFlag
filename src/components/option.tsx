@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 
 import {View, Text, StyleSheet, TouchableOpacity, Platform} from 'react-native';
+import TextFiled from '../assets/common/Text';
 
 type OptionProps = PropsWithChildren<{
   value: string;
@@ -50,7 +51,7 @@ const Option: React.FC<OptionProps> = ({
       onPressIn={onPressIn}
       onPressOut={onPressOut}
       onPress={() => isCorrect(value)}>
-      <Text style={styles.text}>{value}</Text>
+      <TextFiled style={styles.text}>{value}</TextFiled>
     </TouchableOpacity>
   );
 };
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 15,
-    fontWeight: 'bold',
+    // fontWeight: 'bold',
     color: '#e7f9f9',
   },
   shadowBox: {

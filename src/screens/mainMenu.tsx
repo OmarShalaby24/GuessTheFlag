@@ -4,6 +4,7 @@ import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {View, Text, StyleSheet} from 'react-native';
 import Button from '../components/button';
 import type {RootStackParamList} from '../types.ts';
+import TextFiled from '../assets/common/Text.tsx';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'QuizScreen'>;
 
@@ -21,11 +22,13 @@ const MainMenu: React.FC<Props> = ({navigation}: Props) => {
   return (
     <View style={styles.container}>
       <View style={styles.title}>
-        <Text style={styles.text}>
+        <TextFiled style={styles.text}>
           Welcome To{'\n'}
-          <Text style={[styles.text, styles.GameName]}>GTF</Text>
-        </Text>
-        <Text style={[styles.text, styles.subText]}>Guess The Flag</Text>
+          <TextFiled style={[styles.text, styles.GameName]}>GTF</TextFiled>
+        </TextFiled>
+        <TextFiled style={[styles.text, styles.subText]}>
+          Guess The Flag
+        </TextFiled>
       </View>
       <View style={styles.btnList}>
         <Button Label="Start Game" onPress={handleStartGame} />
@@ -48,19 +51,20 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   text: {
-    color: '#010a4b',
+    color: '#043fa7',
     fontSize: 50,
     // fontFamily: 'ConcertOne-Regular',
-    fontFamily: 'Fonarto',
+    // fontFamily: 'Fonarto',
     textAlign: 'center',
     textShadowOffset: {width: 3, height: 3},
     textShadowRadius: 10,
-    textShadowColor: '#043fa7',
+    textShadowColor: '#010a4b',
   },
   GameName: {
-    fontFamily: 'Fonarto XT',
+    color: '#e7f9f9',
+    fontFamily: 'Fonarto',
     textShadowOffset: {width: 3, height: 3},
-    letterSpacing: 10,
+    letterSpacing: 5,
     fontSize: 110,
   },
   subText: {
