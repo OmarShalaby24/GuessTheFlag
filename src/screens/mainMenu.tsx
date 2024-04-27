@@ -25,7 +25,7 @@ const MainMenu: React.FC<Props> = ({navigation}: Props) => {
   // const [countries, setCountries] = useState<
   //   {
   //     name: string;
-  //     code: string;
+  //     code: string; flag: string;
   //     flag: string;
   //   }[]
   // >([]);
@@ -90,9 +90,15 @@ const MainMenu: React.FC<Props> = ({navigation}: Props) => {
     setIsDataLoaded(true);
   };
   const handleStartGame = async () => {
-    console.log('shit');
+    console.log('start game');
+    generateQuiz(countries)
+      .then(result => {
+        // console.log(result);
+        navigation.push('QuizScreen', {quiz: result});
+      })
+      .catch(e => console.log(e));
     // const quiz = new QuizClass(5);
-    if (quiz.length !== 0) navigation.push('QuizScreen', {quiz});
+    // if (quiz.length !== 0)
   };
   const handleFlags = () => {
     console.log('Show Flags');
@@ -101,8 +107,44 @@ const MainMenu: React.FC<Props> = ({navigation}: Props) => {
     console.log('About the App');
   };
 
+  const generateQuiz = (
+    options: {name: string; code: string; flag: string}[],
+  ) => {
+    return new Promise<
+      {
+        answer: {name: string; code: string; flag: string};
+        options: {name: string; code: string; flag: string}[];
+      }[]
+    >((resolve, reject) => {
+      const q = makeQuiz(10, options);
+      resolve(q);
+      reject(new Error());
+    });
+  };
+
+  const loadCountries = () => {
+    return new Promise<{name: string; code: string; flag: string}[]>(
+      (resolve, reject) => {
+        const c: {
+          name: string;
+          code: string;
+          flag: string;
+          // flag: string;
+        }[] = require('../utils/countries_data.json');
+        resolve(c);
+      },
+    );
+  };
+
   useEffect(() => {
-    makeQuiz_();
+    // makeQuiz_();
+
+    loadCountries().then(
+      (result: {name: string; code: string; flag: string}[]) => {
+        setCountries(result);
+        // console.log();
+      },
+    );
     // fetchData();
     // console.log(flags_paths);
     // setCountries(fetchData);

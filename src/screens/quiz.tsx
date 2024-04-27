@@ -31,6 +31,7 @@ const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
     navigation.goBack();
   };
   const quiz: QuestionClass[] = route.params.quiz;
+
   // console.log(quiz.length);
   // const quiz = [
   //   {
@@ -83,11 +84,6 @@ const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
 
   const [timeCountDown, setTimeCountDown] = useState<number>(10);
 
-  const generateQuiz = () => {
-    // quiz = new QuizClass(10);
-    // setQuiz(new QuizClass(5));
-    // console.log({quiz});
-  };
   const flatListRef = useRef<FlatList<any>>(null);
   const scrollTo = (indexToScrollTo: number) =>
     flatListRef.current?.scrollToIndex({
@@ -95,8 +91,9 @@ const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
       animated: true,
     });
 
+  const [countries, setCountries] = useState<{}>();
   useEffect(() => {
-    generateQuiz();
+    console.log('in quiz screen' + JSON.stringify(route.params.quiz[0]));
     // while (isLoading) {
     //   if (quiz.questions.length === 0) continue;
     setIsLoading(false);

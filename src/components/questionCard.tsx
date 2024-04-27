@@ -18,14 +18,14 @@ type QuestionCardProps = PropsWithChildren<{
 const defaultImage = '../assets/images/flags/eg.png';
 
 const QuestionCard = ({country}: QuestionCardProps): React.JSX.Element => {
-  const path = '../';
+  // country = country !== undefined ? country : require('../assets/images/flags/eg.png')
   return (
     <View style={[styles.container, styles.shadowBox]}>
       <View style={styles.title}>
         <TextFiled style={styles.question}>Guess the Country's Flag:</TextFiled>
       </View>
       <View style={[styles.imageContainer, styles.shadowBox]}>
-        {country !== null ? (
+        {country !== undefined ? (
           <Image style={[styles.image]} source={{uri: country}} />
         ) : // <Image
         //   style={[styles.image]}

@@ -37,6 +37,11 @@ export const makeQuiz = async (
   var answers: {name: string; code: string; flag: string}[] = [];
   var options: {name: string; code: string; flag: string}[][] = [];
 
+  var quiz: {
+    answer: {name: string; code: string; flag: string};
+    options: {name: string; code: string; flag: string}[];
+  }[] = [];
+
   var answersCodes: string[] = [];
 
   for (var i = 0; i < numberOfQuestions; i++) {
@@ -45,9 +50,16 @@ export const makeQuiz = async (
       i--;
       continue;
     }
-    answersCodes.push(answer.code);
-    answers.push(answer);
-    options.push(choices);
+    quiz = [
+      ...quiz,
+      {
+        answer,
+        options: choices,
+      },
+    ];
+    // answersCodes.push(answer.code);
+    // answers.push(answer);
+    // options.push(choices);
   }
-  return {answers, options};
+  return quiz;
 };
