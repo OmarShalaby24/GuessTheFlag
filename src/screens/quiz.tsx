@@ -1,53 +1,82 @@
 import React, {useEffect, useRef, useState} from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  View,
-  Text,
-  StyleSheet,
-  Platform,
-  FlatList,
-  ActivityIndicator,
-  Dimensions,
-} from 'react-native';
+import {View, StyleSheet, Platform, FlatList} from 'react-native';
 
-// import {makeQuiz} from '../utils/makeQuestion.ts';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Header from '../components/header';
 import Question from '../components/question';
 import Footer from '../components/footer';
-import {NativeStackScreenProps} from '@react-navigation/native-stack';
-import type {RootStackParamList} from '../types';
-import TextFiled from '../assets/common/Text';
+import LoadingScreen from '../components/loadingScreen';
+import {RouteProp} from '@react-navigation/native';
+import type {
+  CountryClass,
+  QuestionClass,
+  QuizClass,
+  RootStackParamList,
+} from '../types';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 
-type Props = NativeStackScreenProps<RootStackParamList, 'MainMenuScreen'>;
+// NativeStackScreenProps<RootStackParamList, 'MainMenuScreen'>
+// type Props = {navigation: any; quiz: QuestionClass[]};
+type QuizProps = {
+  navigation: NativeStackNavigationProp<RootStackParamList, 'QuizScreen'>;
+  route: RouteProp<{QuizScreen: {quiz: QuestionClass[]}}, 'QuizScreen'>;
+};
 
 //TODO: Create Questions here
 
-const Quiz: React.FC<Props> = ({navigation}: Props) => {
-  const [Answers, setAnswers] = useState<string[]>([]);
-  const [Options, setOptions] = useState<string[][]>([]);
-  const [paths, setPaths] = useState<string[]>([]);
-
-  const [questionCounter, setQuestionCounter] = useState(0);
-  const [correctAnswers, setCorrectAnswers] = useState(0);
-
+const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
+  const [questionNumber, setQuestionNumber] = useState(0);
   const EndQuiz = () => {
     console.log('End Quiz');
     navigation.goBack();
   };
+  const quiz: QuestionClass[] = route.params.quiz;
+  // console.log(quiz.length);
+  // const quiz = [
+  //   {
+  //     answer: {
+  //       name: 'Egypt',
+  //       code: 'eg',
+  //       flag: 'Egyptian flag',
+  //     },
+  //     options: [
+  //       {
+  //         name: 'Egypt',
+  //         code: 'eg',
+  //         flag: 'Egyptian flag',
+  //       },
+  //       {
+  //         name: 'Algeria',
+  //         code: 'al',
+  //         flag: 'Algeria flag',
+  //       },
+  //       {
+  //         name: 'Morocco',
+  //         code: 'mc',
+  //         flag: 'Morocco flag',
+  //       },
+  //     ],
+  //   },
+  // ];
 
-  const checkAnswer = (option: string, questionNumber: number) => {
-    console.log({option});
-    console.log(Answers[questionNumber]);
-    console.log({questionNumber});
-    if (questionNumber < Answers.length - 1) scrollTo(questionNumber + 1);
-    setQuestionCounter(questionCounter + 1);
-    if (option === Answers[questionNumber]) {
+  //FIXME: questionCounter is same as questionNumber, remove the the second one
+  const checkAnswer = (option: CountryClass) => {
+    if (questionNumber < quiz.length - 1) scrollTo(questionNumber + 1);
+    else {
+      navigation.pop();
+      // console.log({questionCounter});
+      navigation.push('ResultsScreen');
+    }
+    setQuestionNumber(questionNumber + 1);
+    // setQuestionCounter(questionCounter + 1);
+
+    if (quiz[questionNumber].answer.name === option.name) {
       console.log('Correct');
-      setCorrectAnswers(correctAnswers + 1);
+      // setCorrectAnswers(correctAnswers + 1);
+      // setResults([...results, {answer: Answers[questionNumber], answerPath: paths[questionNumber], selection: option, selectionPath: }])
       return true;
     } else {
-      console.log('Not Correct');
+      console.log('Not Correct, correct answer is :' + quiz[questionNumber]);
       return false;
     }
   };
@@ -55,51 +84,9 @@ const Quiz: React.FC<Props> = ({navigation}: Props) => {
   const [timeCountDown, setTimeCountDown] = useState<number>(10);
 
   const generateQuiz = () => {
-    setAnswers([
-      'England',
-      'Egypt',
-      'Palestine',
-      'Martinique',
-      'United States Virgin Islands',
-      'United Nations',
-      'Marshall Islands',
-      'Wallis and Futuna',
-      'Colombia',
-      'Czechia',
-    ]);
-    setOptions([
-      ['Czechia', 'Venezuela', 'England'],
-      ['Egypt', 'Bahrain', 'Malta'],
-      ['Central African Republic', 'Palestine', 'Scotland'],
-      ['Martinique', 'Tokelau', 'Poland'],
-      ['United States Virgin Islands', 'Malawi', 'Hong Kong'],
-      ['Micronesia', 'Albania', 'United Nations'],
-      ['Marshall Islands', 'Finland', 'Sint Maarten'],
-      ['Venezuela', 'Wallis and Futuna', 'Oman'],
-      ['Cyprus', 'Colombia', 'Slovenia'],
-      ['Czechia', 'Algeria', 'Ukraine'],
-    ]);
-    setPaths([
-      require('../assets/images/flags/gb-eng.png'),
-      require('../assets/images/flags/eg.png'),
-      require('../assets/images/flags/ps.png'),
-      require('../assets/images/flags/mq.png'),
-      require('../assets/images/flags/vi.png'),
-      require('../assets/images/flags/un.png'),
-      require('../assets/images/flags/mh.png'),
-      require('../assets/images/flags/wf.png'),
-      require('../assets/images/flags/co.png'),
-      require('../assets/images/flags/cz.png'),
-    ]);
-    setInterval(() => {}, 1000);
-    // const {answers, options, imagePaths} = makeQuiz(5);
-    // setAnswers(answers);
-    // setOptions(options);
-    // for (var image in imagePaths) {
-    //   console.log({image});
-    //   // const p = `../assets/images/flags/${code}.png`;
-    //   setPaths([...paths, image]);
-    // }
+    // quiz = new QuizClass(10);
+    // setQuiz(new QuizClass(5));
+    // console.log({quiz});
   };
   const flatListRef = useRef<FlatList<any>>(null);
   const scrollTo = (indexToScrollTo: number) =>
@@ -109,45 +96,42 @@ const Quiz: React.FC<Props> = ({navigation}: Props) => {
     });
 
   useEffect(() => {
-    console.log(Answers);
     generateQuiz();
+    // while (isLoading) {
+    //   if (quiz.questions.length === 0) continue;
     setIsLoading(false);
+    // }
   }, []);
   const [isLoading, setIsLoading] = useState(true);
   return (
     <View style={styles.container}>
-      {isLoading ? (
-        <View style={styles.loadingView}>
-          <TextFiled style={[styles.text, styles.loadingText]}>
-            Loading
-          </TextFiled>
-          <ActivityIndicator size="small" color="#010a4b" animating />
-        </View>
+      {isLoading || quiz === null ? (
+        <LoadingScreen />
       ) : (
         <>
           <Header
             numberOfQuestions={10}
-            correctAnswers={correctAnswers}
-            questionCounter={questionCounter}
+            // correctAnswers={correctAnswers}
+            // questionCounter={questionCounter}
+            correctAnswers={0}
+            questionCounter={0}
             timer={timeCountDown}
           />
           <SafeAreaView>
             <FlatList
               style={styles.questionSlide}
-              data={Options}
+              data={quiz}
               horizontal={true}
               ref={flatListRef}
-              keyExtractor={item => item}
+              keyExtractor={item => item.answer.name}
               showsHorizontalScrollIndicator={false}
-              scrollEnabled={false}
+              // scrollEnabled={false}
               pagingEnabled={true}
               renderItem={({item}) => (
                 <Question
-                  Answer={Answers[Options.indexOf(item)]}
-                  Choices={item}
+                  key={item.answer.code}
+                  question={item}
                   checkAnswer={checkAnswer}
-                  questionNumber={Options.indexOf(item)}
-                  path={paths[Options.indexOf(item)]}
                 />
               )}
             />
@@ -205,13 +189,5 @@ const styles = StyleSheet.create({
         elevation: 5,
       },
     }),
-  },
-  loadingView: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    height: '100%',
-  },
-  loadingText: {
-    fontSize: 50,
   },
 });

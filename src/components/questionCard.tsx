@@ -25,8 +25,8 @@ const QuestionCard = ({country}: QuestionCardProps): React.JSX.Element => {
         <TextFiled style={styles.question}>Guess the Country's Flag:</TextFiled>
       </View>
       <View style={[styles.imageContainer, styles.shadowBox]}>
-        {country !== '' ? (
-          <Image style={[styles.image]} source={+country} />
+        {country !== null ? (
+          <Image style={[styles.image]} source={{uri: country}} />
         ) : // <Image
         //   style={[styles.image]}
         //   source={{

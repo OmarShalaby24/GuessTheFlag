@@ -1,27 +1,16 @@
-import React, {useEffect} from 'react';
-import type {PropsWithChildren} from 'react';
-import {StyleSheet} from 'react-native';
+import React from 'react';
 
 import QuizScreen from './screens/quiz';
 import MainMenuScreen from './screens/mainMenu';
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import type {NativeStackScreenProps} from '@react-navigation/native-stack';
 
 import type {RootStackParamList} from './types.ts';
-// type RootStackParamList = {
-//   MainMenuScreen: undefined;
-//   Quiz: {numberOfQuestions: number};
-// };
-
-// type Props = NativeStackScreenProps<RootStackParamList, 'MainMenu'>;
+import ResultsScreen from './screens/resultsScreen.tsx';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
-//TODO: Load All data here
-
 const App: React.FC = props => {
-  useEffect(() => {});
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName="MainMenuScreen">
@@ -33,6 +22,12 @@ const App: React.FC = props => {
         <Stack.Screen
           name="QuizScreen"
           component={QuizScreen}
+          // component={QuizScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="ResultsScreen"
+          component={ResultsScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

@@ -1,54 +1,53 @@
-import * as countries from './Countries.json';
+// import * as countries from './Countries.json';
 // console.log(countries[0]);
 
-export const makeQuestion = () => {
+// const countries = require('./countries_data_2.json');
+
+export const makeQuestion = async (
+  countries: {name: string; code: string; flag: string}[],
+) => {
   var options = [...countries];
   var count = countries.length;
 
-  const answer = options[Math.floor(Math.random() * count)];
-  const code: string = answer.code;
+  const answer: {name: string; code: string; flag: string} =
+    options[Math.floor(Math.random() * count)];
   count--;
-  options = options.filter(c => c !== answer);
-  // console.log('after choosing an answer');
-  // console.log({answer});
-  // console.log({options});
+  options = options.filter(c => c.code !== answer.code);
 
-  var choices: string[] = [answer.name];
+  var choices: {name: string; code: string; flag: string}[] = [answer];
   for (var i = 0; i < 2; i++) {
     var pickedCountry = options[Math.floor(Math.random() * count)];
-    var choice = pickedCountry.name;
+    var choice = pickedCountry;
     count--;
-    options = options.filter(c => c !== pickedCountry);
+    options = options.filter(c => c.code !== pickedCountry.code);
     choices = [...choices, choice];
-    // console.log('after choosing an option');
-    // console.log({choice});
-    // console.log({options});
   }
-  //shuffle options
   var randomPositionForAnswer = Math.floor(Math.random() * 3);
   [choices[0], choices[randomPositionForAnswer]] = [
     choices[randomPositionForAnswer],
     choices[0],
   ];
-  return {answer, choices, code};
+  return {answer, choices};
 };
 
-export const makeQuiz = (numberOfQuestions: number) => {
-  var answers: string[] = [];
-  var options: string[][] = [];
-  var imagePaths: string[] = [];
+export const makeQuiz = async (
+  numberOfQuestions: number,
+  countries: {name: string; code: string; flag: string}[],
+) => {
+  var answers: {name: string; code: string; flag: string}[] = [];
+  var options: {name: string; code: string; flag: string}[][] = [];
+
+  var answersCodes: string[] = [];
 
   for (var i = 0; i < numberOfQuestions; i++) {
-    const {answer, choices, code} = makeQuestion();
-    if (answers.includes(answer.name)) {
+    const {answer, choices} = await makeQuestion(countries);
+    if (answersCodes.includes(answer.code)) {
       i--;
       continue;
     }
-    answers.push(answer.name);
+    answersCodes.push(answer.code);
+    answers.push(answer);
     options.push(choices);
-    imagePaths.push(`../assets/images/flags/${code}.png`);
   }
-  return {answers, options, imagePaths};
+  return {answers, options};
 };
-
-console.log(makeQuiz(10));

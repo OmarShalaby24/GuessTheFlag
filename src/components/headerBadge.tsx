@@ -4,8 +4,8 @@ import {View, Text, StyleSheet, Platform} from 'react-native';
 import TextFiled from '../assets/common/Text';
 
 type HeaderBadgeProps = PropsWithChildren<{
-  title: string;
-  value: string;
+  title: string | number;
+  value: string | number;
 }>;
 
 const HeaderBadge = ({title, value}: HeaderBadgeProps) => {

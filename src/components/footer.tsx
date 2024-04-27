@@ -25,35 +25,4 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-evenly',
   },
-  button: {
-    backgroundColor: '#043fa7',
-    width: 100,
-    // height: 50,
-    paddingVertical: 10,
-    // marginVertical: 7,
-    borderWidth: 1,
-    borderColor: '#bbefed',
-    borderRadius: 30,
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginVertical: 20,
-  },
-  text: {
-    fontSize: 15,
-    fontWeight: 'bold',
-    color: '#e7f9f9',
-  },
-  shadowBox: {
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: {width: 0, height: 2},
-        shadowOpacity: 0.8,
-        shadowRadius: 2,
-      },
-      android: {
-        elevation: 5,
-      },
-    }),
-  },
 });

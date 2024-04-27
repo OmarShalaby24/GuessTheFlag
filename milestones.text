@@ -8,3 +8,10 @@ Add fonts:
   - run "->npx react-native-assets"
   - now you can add fonts in styles
 
+Load Images on startup:
+  - create file in root called declaration.d.ts
+  - add "include": ["./src/declaration.d.ts"] in tsconfig.json
+
+Lock AutoRotation:
+  - open: android\app\src\main\AndroidManifest.xml
+  - add this line -> android:screenOrientation="portrait" 

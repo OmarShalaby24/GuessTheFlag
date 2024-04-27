@@ -4,7 +4,7 @@ import {View, Text, StyleSheet, Platform} from 'react-native';
 import HeaderBadge from './headerBadge';
 
 type HeaderProps = PropsWithChildren<{
-  numberOfQuestions: any;
+  numberOfQuestions: number;
   questionCounter: number;
   correctAnswers: number;
   timer: number;
@@ -19,8 +19,11 @@ const Header = ({
   const timeValue = timer > 9 ? timer : '0' + timer;
   return (
     <View style={[styles.container, styles.shadowBox]}>
-      <HeaderBadge title={'Questions'} value={questionCounter + '/10'} />
-      <HeaderBadge title={'Correct'} value={correctAnswers.toString()} />
+      <HeaderBadge
+        title={'Questions'}
+        value={questionCounter + '/' + numberOfQuestions}
+      />
+      <HeaderBadge title={'Correct'} value={correctAnswers} />
       <HeaderBadge title={'Timer'} value={`00:${timeValue}`} />
     </View>
   );

@@ -3,17 +3,18 @@ import type {PropsWithChildren} from 'react';
 
 import {View, Text, StyleSheet, TouchableOpacity, Platform} from 'react-native';
 import TextFiled from '../assets/common/Text';
+import {CountryClass} from '../models/Country';
 
 type OptionProps = PropsWithChildren<{
-  value: string;
+  value: CountryClass;
   checkAnswer: Function;
-  questionNumber: number;
+  // questionNumber: number;
 }>;
 
 const Option: React.FC<OptionProps> = ({
   value,
   checkAnswer,
-  questionNumber,
+  // questionNumber,
 }) => {
   const [buttonStyle, setButtonStyle] = useState<{}>({
     ...styles.container,
@@ -32,8 +33,8 @@ const Option: React.FC<OptionProps> = ({
       ...styles.shadowBox,
     });
   };
-  const isCorrect = (option: String) => {
-    if (checkAnswer(option, questionNumber)) {
+  const isCorrect = (option: CountryClass) => {
+    if (checkAnswer(option)) {
       setButtonStyle({
         ...buttonStyle,
         backgroundColor: '#018e42',
@@ -51,7 +52,7 @@ const Option: React.FC<OptionProps> = ({
       onPressIn={onPressIn}
       onPressOut={onPressOut}
       onPress={() => isCorrect(value)}>
-      <TextFiled style={styles.text}>{value}</TextFiled>
+      <TextFiled style={styles.text}>{value.name}</TextFiled>
     </TouchableOpacity>
   );
 };

@@ -4,31 +4,32 @@ import type {PropsWithChildren} from 'react';
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import Option from './option';
 import QuestionCard from './questionCard';
+import {CountryClass} from '../models/Country';
+import {QuestionClass as QuestionsClass} from '../models/Question';
 
 type QuestionProps = PropsWithChildren<{
-  Answer: string;
-  Choices: string[];
+  // answer: Country;
+  // options: Country[];
+  question: QuestionsClass;
   checkAnswer: Function;
-  questionNumber: number;
-  path: string;
+  // questionNumber: number;
+  // path: string;
 }>;
 
 const Question = ({
-  Answer,
-  Choices,
+  question,
   checkAnswer,
-  questionNumber,
-  path,
 }: QuestionProps): React.JSX.Element => {
+  // if (path === null) console.log(answer);
+  const {answer, options} = question;
   return (
     <View style={styles.container}>
-      <QuestionCard country={path} />
-      {Choices.map((option: string) => (
+      <QuestionCard country={answer.flag} />
+      {options.map((option: CountryClass) => (
         <Option
-          key={option.toString()}
+          key={option.code}
           value={option}
-          checkAnswer={() => checkAnswer(option, questionNumber)}
-          questionNumber={questionNumber}
+          checkAnswer={() => checkAnswer(option)}
         />
       ))}
     </View>
