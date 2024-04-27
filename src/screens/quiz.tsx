@@ -11,6 +11,7 @@ import type {
   CountryClass,
   QuestionClass,
   QuizClass,
+  ResultRecord,
   RootStackParamList,
 } from '../types';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
@@ -26,58 +27,51 @@ type QuizProps = {
 
 const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
   const [questionNumber, setQuestionNumber] = useState(0);
+  const [correctAnswers, setCorrectAnswers] = useState(0);
+  const [results, setResults] = useState<ResultRecord[]>([]);
   const EndQuiz = () => {
     console.log('End Quiz');
     navigation.goBack();
   };
-  const quiz: QuestionClass[] = route.params.quiz;
+  const {quiz} = route.params;
 
-  // console.log(quiz.length);
-  // const quiz = [
-  //   {
-  //     answer: {
-  //       name: 'Egypt',
-  //       code: 'eg',
-  //       flag: 'Egyptian flag',
-  //     },
-  //     options: [
-  //       {
-  //         name: 'Egypt',
-  //         code: 'eg',
-  //         flag: 'Egyptian flag',
-  //       },
-  //       {
-  //         name: 'Algeria',
-  //         code: 'al',
-  //         flag: 'Algeria flag',
-  //       },
-  //       {
-  //         name: 'Morocco',
-  //         code: 'mc',
-  //         flag: 'Morocco flag',
-  //       },
-  //     ],
-  //   },
-  // ];
+  const isLastQuestion = () => {
+    return new Promise((resolve, reject) => {
+      resolve(questionNumber >= quiz.length - 1);
+    });
+  };
 
-  //FIXME: questionCounter is same as questionNumber, remove the the second one
   const checkAnswer = (option: CountryClass) => {
+    setResults([
+      ...results,
+      {answer: quiz[questionNumber].answer, pickedOption: option},
+    ]);
     if (questionNumber < quiz.length - 1) scrollTo(questionNumber + 1);
     else {
       navigation.pop();
-      // console.log({questionCounter});
-      navigation.push('ResultsScreen');
+      navigation.navigate('ResultsScreen', {
+        correctAnswersBadge: correctAnswers,
+        questionCounterBadge: questionNumber + 1,
+        timeCountDownBadge: timeCountDown,
+        results: [
+          ...results,
+          {answer: quiz[questionNumber].answer, pickedOption: option},
+        ],
+      });
     }
+
     setQuestionNumber(questionNumber + 1);
-    // setQuestionCounter(questionCounter + 1);
 
     if (quiz[questionNumber].answer.name === option.name) {
       console.log('Correct');
+      setCorrectAnswers(correctAnswers + 1);
       // setCorrectAnswers(correctAnswers + 1);
       // setResults([...results, {answer: Answers[questionNumber], answerPath: paths[questionNumber], selection: option, selectionPath: }])
       return true;
     } else {
-      console.log('Not Correct, correct answer is :' + quiz[questionNumber]);
+      console.log(
+        'Not Correct, correct answer is :' + quiz[questionNumber].answer.name,
+      );
       return false;
     }
   };
@@ -91,15 +85,12 @@ const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
       animated: true,
     });
 
-  const [countries, setCountries] = useState<{}>();
   useEffect(() => {
-    console.log('in quiz screen' + JSON.stringify(route.params.quiz[0]));
-    // while (isLoading) {
-    //   if (quiz.questions.length === 0) continue;
     setIsLoading(false);
-    // }
   }, []);
+
   const [isLoading, setIsLoading] = useState(true);
+
   return (
     <View style={styles.container}>
       {isLoading || quiz === null ? (
@@ -108,10 +99,8 @@ const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
         <>
           <Header
             numberOfQuestions={10}
-            // correctAnswers={correctAnswers}
-            // questionCounter={questionCounter}
-            correctAnswers={0}
-            questionCounter={0}
+            correctAnswers={correctAnswers}
+            questionCounter={questionNumber + 1}
             timer={timeCountDown}
           />
           <SafeAreaView>
@@ -120,9 +109,9 @@ const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
               data={quiz}
               horizontal={true}
               ref={flatListRef}
-              keyExtractor={item => item.answer.name}
+              keyExtractor={item => item.answer.name + questionNumber}
               showsHorizontalScrollIndicator={false}
-              // scrollEnabled={false}
+              scrollEnabled={false}
               pagingEnabled={true}
               renderItem={({item}) => (
                 <Question

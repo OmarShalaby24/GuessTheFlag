@@ -7,8 +7,13 @@ import type {
 
 export type RootStackParamList = {
   MainMenuScreen: undefined;
-  QuizScreen: undefined;
-  ResultsScreen: undefined;
+  QuizScreen: {quiz: QuestionClass[]};
+  ResultsScreen: {
+    correctAnswersBadge: number;
+    questionCounterBadge: number;
+    timeCountDownBadge: number;
+    results: ResultRecord[];
+  };
 };
 
 export type MainMenuParamList = {
@@ -26,4 +31,9 @@ export type QuestionClass = {
 };
 export type QuizClass = {
   questions: QuestionClass[];
+};
+
+export type ResultRecord = {
+  answer: CountryClass;
+  pickedOption: CountryClass;
 };

@@ -8,10 +8,11 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import {CountryClass} from '../types';
 
 type Props = {
-  picked: {Name: string; path: string};
-  right: {Name: string; path: string};
+  right: CountryClass;
+  picked: CountryClass;
 };
 
 const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
@@ -20,17 +21,17 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
       <View style={{marginHorizontal: 0, alignItems: 'center'}}>
         <TextFiled style={{fontSize: 20}}>Correct</TextFiled>
         <TouchableOpacity style={styles.shadowBox}>
-          <Image style={[styles.image]} source={{uri: right.path}} />
+          <Image style={[styles.image]} source={{uri: right.flag}} />
         </TouchableOpacity>
-        <TextFiled style={{}}>{right.Name}</TextFiled>
+        <TextFiled style={{}}>{right.name}</TextFiled>
       </View>
-      {picked.Name !== right.Name ? (
+      {picked.name !== right.name ? (
         <View style={{marginHorizontal: 0, alignItems: 'center'}}>
           <TextFiled style={{fontSize: 20}}>You Picked</TextFiled>
           <TouchableOpacity style={styles.shadowBox}>
-            <Image style={styles.image} source={{uri: picked.path}} />
+            <Image style={styles.image} source={{uri: picked.flag}} />
           </TouchableOpacity>
-          <TextFiled style={{}}>{picked.Name}</TextFiled>
+          <TextFiled style={{}}>{picked.name}</TextFiled>
         </View>
       ) : null}
     </View>

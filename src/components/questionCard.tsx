@@ -27,13 +27,7 @@ const QuestionCard = ({country}: QuestionCardProps): React.JSX.Element => {
       <View style={[styles.imageContainer, styles.shadowBox]}>
         {country !== undefined ? (
           <Image style={[styles.image]} source={{uri: country}} />
-        ) : // <Image
-        //   style={[styles.image]}
-        //   source={{
-        //     uri: 'file:///D:/Projects/React%20Native/GuessTheFlag/src/assets/images/flags/eg.png',
-        //   }}
-        // />
-        null}
+        ) : null}
       </View>
     </View>
   );
@@ -48,8 +42,10 @@ const styles = StyleSheet.create({
     borderColor: 'black',
     borderWidth: 1,
     // height: 120,
-    height: Dimensions.get('window').height / 5.5,
-    width: Dimensions.get('window').width / 1.8,
+    height: Dimensions.get('window').height / 5.3,
+    width: Dimensions.get('window').width / 2,
+    // height: Dimensions.get('window').height / 5.1,
+    // width: Dimensions.get('window').width / 1.5,
     // aspectRatio: 9 / 5,
     borderRadius: 10,
   },

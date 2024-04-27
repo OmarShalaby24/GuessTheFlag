@@ -22,7 +22,6 @@ const App: React.FC = props => {
         <Stack.Screen
           name="QuizScreen"
           component={QuizScreen}
-          // component={QuizScreen}
           options={{headerShown: false}}
         />
         <Stack.Screen

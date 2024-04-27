@@ -1,20 +1,19 @@
 // import * as countries from './Countries.json';
 // console.log(countries[0]);
 
+import {CountryClass} from '../types';
+
 // const countries = require('./countries_data_2.json');
 
-export const makeQuestion = async (
-  countries: {name: string; code: string; flag: string}[],
-) => {
+export const makeQuestion = async (countries: CountryClass[]) => {
   var options = [...countries];
   var count = countries.length;
 
-  const answer: {name: string; code: string; flag: string} =
-    options[Math.floor(Math.random() * count)];
+  const answer: CountryClass = options[Math.floor(Math.random() * count)];
   count--;
   options = options.filter(c => c.code !== answer.code);
 
-  var choices: {name: string; code: string; flag: string}[] = [answer];
+  var choices: CountryClass[] = [answer];
   for (var i = 0; i < 2; i++) {
     var pickedCountry = options[Math.floor(Math.random() * count)];
     var choice = pickedCountry;
@@ -32,14 +31,14 @@ export const makeQuestion = async (
 
 export const makeQuiz = async (
   numberOfQuestions: number,
-  countries: {name: string; code: string; flag: string}[],
+  countries: CountryClass[] | [],
 ) => {
-  var answers: {name: string; code: string; flag: string}[] = [];
-  var options: {name: string; code: string; flag: string}[][] = [];
+  var answers: CountryClass[] = [];
+  var options: CountryClass[][] = [];
 
   var quiz: {
-    answer: {name: string; code: string; flag: string};
-    options: {name: string; code: string; flag: string}[];
+    answer: CountryClass;
+    options: CountryClass[];
   }[] = [];
 
   var answersCodes: string[] = [];
