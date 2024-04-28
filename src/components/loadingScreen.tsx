@@ -13,6 +13,11 @@ const LoadingScreen = () => {
 
 const styles = StyleSheet.create({
   loadingView: {
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    width: '100%',
+    backgroundColor: 'rgba(187, 239, 237 ,0.3)',
     alignItems: 'center',
     justifyContent: 'center',
     height: '100%',

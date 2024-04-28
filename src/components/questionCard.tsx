@@ -26,7 +26,11 @@ const QuestionCard = ({country}: QuestionCardProps): React.JSX.Element => {
       </View>
       <View style={[styles.imageContainer, styles.shadowBox]}>
         {country !== undefined ? (
-          <Image style={[styles.image]} source={{uri: country}} />
+          <Image
+            style={[styles.image]}
+            source={{uri: country}}
+            fadeDuration={0}
+          />
         ) : null}
       </View>
     </View>

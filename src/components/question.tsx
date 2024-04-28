@@ -8,29 +8,24 @@ import {CountryClass} from '../models/Country';
 import {QuestionClass as QuestionsClass} from '../models/Question';
 
 type QuestionProps = PropsWithChildren<{
-  // answer: Country;
-  // options: Country[];
   question: QuestionsClass;
-  checkAnswer: Function;
-  // questionNumber: number;
-  // path: string;
+  handleSelection: Function;
 }>;
 
 const Question = ({
   question,
-  checkAnswer,
+  handleSelection,
 }: QuestionProps): React.JSX.Element => {
-  // if (path === null) console.log(answer);
   const {answer, options} = question;
+  const isCorrect = (selection: CountryClass) => {
+    handleSelection(answer.name === selection.name, selection);
+    return answer.name === selection.name;
+  };
   return (
     <View style={styles.container}>
       <QuestionCard country={answer.flag} />
       {options.map((option: CountryClass) => (
-        <Option
-          key={option.code}
-          value={option}
-          checkAnswer={() => checkAnswer(option)}
-        />
+        <Option key={option.name} value={option} checkAnswer={isCorrect} />
       ))}
     </View>
   );
@@ -40,14 +35,8 @@ export default Question;
 
 const styles = StyleSheet.create({
   container: {
-    // borderColor: 'red',
-    // borderWidth: 2,
     alignItems: 'center',
     justifyContent: 'center',
-    // marginHorizontal: 50,
-    // height: '20%',
-    // width: 360,
     width: Dimensions.get('window').width,
-    // paddingBottom: 40,
   },
 });

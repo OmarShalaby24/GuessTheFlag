@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import type {PropsWithChildren} from 'react';
-import {View, Text, StyleSheet, Platform} from 'react-native';
+import {View, StyleSheet, Platform} from 'react-native';
 import TextFiled from '../assets/common/Text';
 
 type HeaderBadgeProps = PropsWithChildren<{
@@ -22,7 +22,6 @@ export default HeaderBadge;
 const styles = StyleSheet.create({
   text: {
     color: '#043fa7',
-    // padding: 10,
     fontSize: 13,
   },
   badge: {

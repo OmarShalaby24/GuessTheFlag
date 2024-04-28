@@ -1,7 +1,6 @@
-import React, {Component} from 'react';
+import React from 'react';
 import TextFiled from '../assets/common/Text';
 import {
-  Dimensions,
   Image,
   Platform,
   StyleSheet,
@@ -42,8 +41,6 @@ export default ResultCard;
 
 const styles = StyleSheet.create({
   container: {
-    // borderWidth: 1,
-    // width: '100%',
     flexDirection: 'row',
     justifyContent: 'space-evenly',
     alignItems: 'center',
@@ -59,7 +56,6 @@ const styles = StyleSheet.create({
     borderColor: '#000',
     borderRadius: 5,
     width: 100,
-    // height: 30,
     aspectRatio: 9 / 5,
   },
   shadowBox: {

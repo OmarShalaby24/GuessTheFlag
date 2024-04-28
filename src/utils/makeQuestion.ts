@@ -56,9 +56,7 @@ export const makeQuiz = async (
         options: choices,
       },
     ];
-    // answersCodes.push(answer.code);
-    // answers.push(answer);
-    // options.push(choices);
+    answersCodes.push(answer.code);
   }
   return quiz;
 };

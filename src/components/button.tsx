@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 
-import {View, TouchableOpacity, Text, StyleSheet, Platform} from 'react-native';
+import {TouchableOpacity, StyleSheet, Platform} from 'react-native';
 import TextFiled from '../assets/common/Text';
 
 type ButtonProps = PropsWithChildren<{
@@ -48,7 +48,6 @@ const styles = StyleSheet.create({
   },
   btnText: {
     fontSize: 15,
-    // fontWeight: 'bold',
     color: '#e7f9f9',
   },
   shadowBox: {

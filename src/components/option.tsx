@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 
-import {View, Text, StyleSheet, TouchableOpacity, Platform} from 'react-native';
+import {StyleSheet, TouchableOpacity, Platform} from 'react-native';
 import TextFiled from '../assets/common/Text';
 import {CountryClass} from '../models/Country';
 

@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 import type {PropsWithChildren} from 'react';
-import {View, Text, StyleSheet, Platform} from 'react-native';
+import {View, StyleSheet, Platform} from 'react-native';
 import HeaderBadge from './headerBadge';
 
 type HeaderProps = PropsWithChildren<{
@@ -20,7 +20,7 @@ const Header = ({
   return (
     <View style={[styles.container, styles.shadowBox]}>
       <HeaderBadge
-        title={'Questions'}
+        title={'Answered'}
         value={questionCounter + '/' + numberOfQuestions}
       />
       <HeaderBadge title={'Correct'} value={correctAnswers} />

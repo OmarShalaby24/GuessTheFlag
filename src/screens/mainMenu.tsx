@@ -4,19 +4,11 @@ import {View, StyleSheet} from 'react-native';
 import Button from '../components/button';
 import TextFiled from '../assets/common/Text.tsx';
 import LoadingScreen from '../components/loadingScreen.tsx';
-// import {flags_paths, loadData} from '../utils/loadData.ts';
-// import {QuizClass} from '../models/Quiz.ts';
 
-import {
-  CountryClass,
-  QuestionClass,
-  QuizClass,
-  RootStackParamList,
-} from '../types.ts';
+import {CountryClass, QuestionClass, RootStackParamList} from '../types.ts';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {makeQuestion, makeQuiz} from '../utils/makeQuestion.ts';
+import {makeQuiz} from '../utils/makeQuestion.ts';
 
-// type Props = NativeStackScreenProps<RootStackParamList, 'QuizScreen'>;
 type Props = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'MainMenuScreen'>;
 };
@@ -46,7 +38,7 @@ const MainMenu: React.FC<Props> = ({navigation}: Props) => {
         options: CountryClass[];
       }[]
     >((resolve, reject) => {
-      //FIXME: make it 10 questoins
+      //FIXME: make it 10 questions
       const q = makeQuiz(10, options);
       resolve(q);
       reject(new Error());
