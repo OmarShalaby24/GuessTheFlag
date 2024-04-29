@@ -6,7 +6,8 @@ import type {
 // import type { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
 
 export type RootStackParamList = {
-  MainMenuScreen: undefined;
+  WelcomeScreen: undefined;
+  MainMenuScreen: {countries: CountryClass[]};
   QuizScreen: {quiz: QuestionClass[]};
   ResultsScreen: {
     correctAnswersBadge: number;

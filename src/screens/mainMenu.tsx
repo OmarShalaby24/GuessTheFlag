@@ -8,14 +8,20 @@ import LoadingScreen from '../components/loadingScreen.tsx';
 import {CountryClass, QuestionClass, RootStackParamList} from '../types.ts';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import {makeQuiz} from '../utils/makeQuestion.ts';
+import {RouteProp} from '@react-navigation/native';
 
 type Props = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'MainMenuScreen'>;
+  route: RouteProp<
+    {MainMenuScreen: {countries: CountryClass[]}},
+    'MainMenuScreen'
+  >;
 };
 
-const MainMenu: React.FC<Props> = ({navigation}: Props) => {
-  const [countries, setCountries] = useState<CountryClass[]>([]);
-  const [isDataLoaded, setIsDataLoaded] = useState(false);
+const MainMenu: React.FC<Props> = ({navigation, route}: Props) => {
+  const {countries} = route.params;
+  // const [countries, setCountries] = useState<CountryClass[]>([]);
+  // const [isDataLoaded, setIsDataLoaded] = useState(false);
   const handleStartGame = async () => {
     console.log('start game');
     generateQuiz(countries)
@@ -45,46 +51,41 @@ const MainMenu: React.FC<Props> = ({navigation}: Props) => {
     });
   };
 
-  const loadCountries = () => {
-    return new Promise<CountryClass[]>((resolve, reject) => {
-      const c: {
-        name: string;
-        code: string;
-        flag: string;
-      }[] = require('../utils/countries_data.json');
-      resolve(c);
-    });
-  };
+  // const loadCountries = () => {
+  //   return new Promise<CountryClass[]>((resolve, reject) => {
+  //     const c: {
+  //       name: string;
+  //       code: string;
+  //       flag: string;
+  //     }[] = require('../utils/countries_data.json');
+  //     resolve(c);
+  //   });
+  // };
 
-  useEffect(() => {
-    loadCountries().then((result: CountryClass[]) => {
-      setCountries(result);
-    });
-    setIsDataLoaded(true);
-  }, []);
+  // useEffect(() => {
+  //   // navigation.pop();
+  //   // loadCountries().then((result: CountryClass[]) => {
+  //   //   setCountries(result);
+  //   // });
+  //   // setIsDataLoaded(true);
+  // }, []);
 
   return (
     <View style={styles.container}>
-      {isDataLoaded === false ? (
-        <LoadingScreen />
-      ) : (
-        <>
-          <View style={styles.title}>
-            <TextFiled style={styles.text}>
-              Welcome To{'\n'}
-              <TextFiled style={[styles.text, styles.GameName]}>GTF</TextFiled>
-            </TextFiled>
-            <TextFiled style={[styles.text, styles.subText]}>
-              Guess The Flag
-            </TextFiled>
-          </View>
-          <View style={styles.btnList}>
-            <Button Label="Start Game" onPress={handleStartGame} />
-            <Button Label="Flags" onPress={handleFlags} />
-            <Button Label="About" onPress={handleAbout} />
-          </View>
-        </>
-      )}
+      <View style={styles.title}>
+        <TextFiled style={styles.text}>
+          Welcome To{'\n'}
+          <TextFiled style={[styles.text, styles.GameName]}>GTF</TextFiled>
+        </TextFiled>
+        <TextFiled style={[styles.text, styles.subText]}>
+          Guess The Flag
+        </TextFiled>
+      </View>
+      <View style={styles.btnList}>
+        <Button Label="Start Game" onPress={handleStartGame} />
+        <Button Label="Flags" onPress={handleFlags} />
+        <Button Label="About" onPress={handleAbout} />
+      </View>
     </View>
   );
 };
