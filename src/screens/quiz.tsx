@@ -96,28 +96,8 @@ export default Quiz;
 const styles = StyleSheet.create({
   container: {
     backgroundColor: '#bbefed',
+    justifyContent: 'space-between',
     height: '100%',
-  },
-  title: {
-    alignItems: 'center',
-    padding: 20,
-  },
-  text: {
-    color: '#043fa7',
-  },
-  questions: {
-    backgroundColor: '#e7f9f9',
-    flexDirection: 'row',
-    borderWidth: 1,
-    borderColor: '#e7f9f9',
-    paddingVertical: 5,
-    paddingHorizontal: 20,
-    borderRadius: 10,
-  },
-  imageContainer: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    margin: 20,
   },
   shadowBox: {
     ...Platform.select({

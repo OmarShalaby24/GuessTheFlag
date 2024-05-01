@@ -30,8 +30,9 @@ const MainMenu: React.FC<Props> = ({navigation, route}: Props) => {
       })
       .catch(e => console.log(e));
   };
-  const handleFlags = () => {
+  const handleFlags = async () => {
     console.log('Show Flags');
+    navigation.navigate('FlagsScreen', {countries});
   };
   const handleAbout = () => {
     console.log('About the App');

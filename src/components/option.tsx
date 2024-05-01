@@ -3,7 +3,7 @@ import type {PropsWithChildren} from 'react';
 
 import {StyleSheet, TouchableOpacity, Platform} from 'react-native';
 import TextFiled from '../assets/common/Text';
-import {CountryClass} from '../models/Country';
+import {CountryClass} from '../types';
 
 type OptionProps = PropsWithChildren<{
   value: CountryClass;

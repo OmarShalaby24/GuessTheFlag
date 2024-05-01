@@ -58,6 +58,7 @@ const ResultsScreen: React.FC<ResultsProps> = ({
       ) : (
         <FlatList
           data={results}
+          contentContainerStyle={{paddingBottom: 50}}
           renderItem={({item}) => (
             <View>
               <ResultCard picked={item.pickedOption} right={item.answer} />
@@ -79,7 +80,13 @@ const styles = StyleSheet.create({
     backgroundColor: '#e7f9f9',
   },
   btnContainer: {
+    // borderWidth: 1,
+    width: '100%',
     alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    bottom: 0,
+    // marginHorizontal: Dimensions.get('screen').width / 2,
   },
 });
 

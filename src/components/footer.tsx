@@ -21,7 +21,7 @@ export default Footer;
 
 const styles = StyleSheet.create({
   container: {
-    paddingHorizontal: 20,
+    // borderWidth: 1,
     flexDirection: 'row',
     justifyContent: 'space-evenly',
   },

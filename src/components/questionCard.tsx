@@ -42,19 +42,8 @@ const QuestionCard = ({country}: QuestionCardProps): React.JSX.Element => {
 export default QuestionCard;
 
 const styles = StyleSheet.create({
-  image: {
-    borderColor: 'black',
-    borderWidth: 1,
-    // height: 120,
-    height: Dimensions.get('window').height / 5,
-    width: Dimensions.get('window').width / 1.7,
-    // height: Dimensions.get('window').height / 5.1,
-    // width: Dimensions.get('window').width / 1.5,
-    // aspectRatio: 9 / 5,
-    borderRadius: 10,
-  },
   container: {
-    marginVertical: 20,
+    marginVertical: 5,
     backgroundColor: '#e7f9f9',
     alignItems: 'center',
     borderRadius: 20,
@@ -67,12 +56,24 @@ const styles = StyleSheet.create({
   },
   question: {
     fontSize: 20,
-    color: '#043fa7',
+  },
+  image: {
+    borderColor: 'black',
+    borderWidth: 1,
+    borderRadius: 10,
+    // height: 120,
+    height: Dimensions.get('window').height / 5,
+    width: Dimensions.get('window').width / 1.7,
+    // height: Dimensions.get('window').height / 5.1,
+    // width: Dimensions.get('window').width / 1.5,
+    // aspectRatio: 9 / 5,
   },
   imageContainer: {
     alignItems: 'center',
     borderRadius: 10,
     marginVertical: 30,
+    height: Dimensions.get('window').height / 5,
+    width: Dimensions.get('window').width / 1.7,
   },
   shadowBox: {
     ...Platform.select({

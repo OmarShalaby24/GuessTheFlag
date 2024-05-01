@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Children} from 'react';
 import type {PropsWithChildren} from 'react';
 import {View, StyleSheet, Platform} from 'react-native';
 import HeaderBadge from './headerBadge';

@@ -4,6 +4,7 @@ import WelcomeScreen from './screens/welcomeScreen.tsx';
 import MainMenuScreen from './screens/mainMenu';
 import QuizScreen from './screens/quiz';
 import ResultsScreen from './screens/resultsScreen.tsx';
+import FlagsScreen from './screens/flags.tsx';
 
 import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
@@ -22,6 +23,7 @@ const App: React.FC = props => {
         <Stack.Screen name="MainMenuScreen" component={MainMenuScreen} />
         <Stack.Screen name="QuizScreen" component={QuizScreen} />
         <Stack.Screen name="ResultsScreen" component={ResultsScreen} />
+        <Stack.Screen name="FlagsScreen" component={FlagsScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

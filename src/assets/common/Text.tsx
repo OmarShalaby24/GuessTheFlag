@@ -19,5 +19,6 @@ const styles = StyleSheet.create({
   text: {
     color: '#043fa7',
     fontFamily: 'FredokaOne-Regular',
+    textAlign: 'center',
   },
 });

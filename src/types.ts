@@ -1,10 +1,3 @@
-import type {
-  CompositeScreenProps,
-  NavigatorScreenParams,
-} from '@react-navigation/native';
-// import type { StackScreenProps } from '@react-navigation/stack';
-// import type { BottomTabScreenProps } from '@react-navigation/bottom-tabs';
-
 export type RootStackParamList = {
   WelcomeScreen: undefined;
   MainMenuScreen: {countries: CountryClass[]};
@@ -15,11 +8,12 @@ export type RootStackParamList = {
     timeCountDownBadge: number;
     results: ResultRecord[];
   };
+  FlagsScreen: {countries: CountryClass[]};
 };
 
-export type MainMenuParamList = {
-  // QuizScreen: {numberOfQuestions: number};
-};
+// export type MainMenuParamList = {
+//   // QuizScreen: {numberOfQuestions: number};
+// };
 
 export type CountryClass = {
   name: string;

@@ -4,11 +4,10 @@ import type {PropsWithChildren} from 'react';
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import Option from './option';
 import QuestionCard from './questionCard';
-import {CountryClass} from '../models/Country';
-import {QuestionClass as QuestionsClass} from '../models/Question';
+import {CountryClass, QuestionClass} from '../types';
 
 type QuestionProps = PropsWithChildren<{
-  question: QuestionsClass;
+  question: QuestionClass;
   handleSelection: Function;
 }>;
 
@@ -35,6 +34,7 @@ export default Question;
 
 const styles = StyleSheet.create({
   container: {
+    // borderWidth: 1,
     alignItems: 'center',
     justifyContent: 'center',
     width: Dimensions.get('window').width,
