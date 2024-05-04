@@ -58,7 +58,7 @@ const ResultsScreen: React.FC<ResultsProps> = ({
       ) : (
         <FlatList
           data={results}
-          contentContainerStyle={{paddingBottom: 50}}
+          contentContainerStyle={{paddingBottom: 50, alignItems: 'center'}}
           renderItem={({item}) => (
             <View>
               <ResultCard picked={item.pickedOption} right={item.answer} />
