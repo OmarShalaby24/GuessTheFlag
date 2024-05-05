@@ -53,7 +53,14 @@ const ResultsScreen: React.FC<ResultsProps> = ({
           value={`${questionCounterBadge} / 10`}
         />
         <HeaderBadge title="Correct : " value={correctAnswersBadge} />
-        <HeaderBadge title="Timer : " value={`00:${timeCountDownBadge}`} />
+        <HeaderBadge
+          title="Timer : "
+          value={
+            timeCountDownBadge > 9
+              ? `00:${timeCountDownBadge}`
+              : `00:0${timeCountDownBadge}`
+          }
+        />
       </Header>
       {isLoading ? (
         <View style={{alignItems: 'center'}}>

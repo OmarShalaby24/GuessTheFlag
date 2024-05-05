@@ -36,9 +36,9 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
               marginHorizontal: 0,
               alignItems: 'center',
             }}>
-            {/* <TextFiled style={{fontSize: 20, color: fontColor}}>
+            <TextFiled style={{fontSize: 15, color: fontColor}}>
               Correct
-            </TextFiled> */}
+            </TextFiled>
             <TouchableOpacity style={styles.shadowBox}>
               <Image style={[styles.image]} source={{uri: right.flag}} />
             </TouchableOpacity>
@@ -52,9 +52,9 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
                 marginHorizontal: 0,
                 alignItems: 'center',
               }}>
-              {/* <TextFiled style={{fontSize: 20, color: fontColor}}>
+              <TextFiled style={{fontSize: 15, color: fontColor}}>
                 You Picked
-              </TextFiled> */}
+              </TextFiled>
               <TouchableOpacity style={styles.shadowBox}>
                 <Image style={styles.image} source={{uri: picked.flag}} />
               </TouchableOpacity>

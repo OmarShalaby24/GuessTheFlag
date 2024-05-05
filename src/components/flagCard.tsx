@@ -27,11 +27,7 @@ const FlagCard: React.FC<flagCardProps> = memo(({country}: flagCardProps) => {
       style={cardStyle}
       onPress={() => console.log(country.name)}>
       <View style={[styles.imageContainer, styles.shadowBox]}>
-        <Image
-          style={styles.image}
-          source={{uri: country.flag}}
-          fadeDuration={0}
-        />
+        <Image style={styles.image} source={{uri: country.flag}} />
       </View>
       <View style={{flex: 1, justifyContent: 'center'}}>
         <TextFiled style={{color: palette1.background}}>

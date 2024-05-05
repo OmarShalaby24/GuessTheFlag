@@ -73,6 +73,9 @@ const styles = StyleSheet.create({
   welcomeText: {
     fontSize: 50,
     color: palette1.logo,
+    textShadowOffset: {width: 3, height: 3},
+    textShadowRadius: 5,
+    textShadowColor: '#000',
   },
 });
 export default WelcomeScreen;
