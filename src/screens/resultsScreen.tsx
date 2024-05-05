@@ -10,6 +10,8 @@ import {ResultRecord, RootStackParamList} from '../types';
 import {RouteProp} from '@react-navigation/native';
 import LoadingScreen from '../components/loadingScreen';
 import TextFiled from '../assets/common/Text';
+import {palette1} from '../colors';
+import HeaderBadge from '../components/headerBadge';
 
 type ResultsProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'ResultsScreen'>;
@@ -45,15 +47,17 @@ const ResultsScreen: React.FC<ResultsProps> = ({
   };
   return (
     <SafeAreaView style={styles.container}>
-      <Header
-        correctAnswers={correctAnswersBadge}
-        numberOfQuestions={10}
-        questionCounter={questionCounterBadge}
-        timer={timeCountDownBadge}
-      />
+      <Header>
+        <HeaderBadge
+          title="Answered : "
+          value={`${questionCounterBadge} / 10`}
+        />
+        <HeaderBadge title="Correct : " value={correctAnswersBadge} />
+        <HeaderBadge title="Timer : " value={`00:${timeCountDownBadge}`} />
+      </Header>
       {isLoading ? (
         <View style={{alignItems: 'center'}}>
-          <TextFiled style={{fontSize: 30}}>No Results</TextFiled>
+          <TextFiled style={{fontSize: 30, padding: 10}}>No Results</TextFiled>
         </View>
       ) : (
         <FlatList
@@ -76,8 +80,7 @@ const ResultsScreen: React.FC<ResultsProps> = ({
 const styles = StyleSheet.create({
   container: {
     height: '100%',
-    justifyContent: 'space-between',
-    backgroundColor: '#e7f9f9',
+    backgroundColor: palette1.background,
   },
   btnContainer: {
     // borderWidth: 1,

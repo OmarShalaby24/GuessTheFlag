@@ -22,7 +22,10 @@ const Question = ({
   };
   return (
     <View style={styles.container}>
-      <QuestionCard country={answer.flag} />
+      <QuestionCard
+        country={answer.flag}
+        questionHead="Guess the Country's Flag:"
+      />
       {options.map((option: CountryClass) => (
         <Option key={option.name} value={option} checkAnswer={isCorrect} />
       ))}

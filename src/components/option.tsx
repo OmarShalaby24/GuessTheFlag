@@ -4,6 +4,7 @@ import type {PropsWithChildren} from 'react';
 import {StyleSheet, TouchableOpacity, Platform} from 'react-native';
 import TextFiled from '../assets/common/Text';
 import {CountryClass} from '../types';
+import {palette1} from '../colors';
 
 type OptionProps = PropsWithChildren<{
   value: CountryClass;
@@ -23,7 +24,7 @@ const Option: React.FC<OptionProps> = ({
   const onPressIn = () => {
     setButtonStyle({
       ...buttonStyle,
-      backgroundColor: '#010a4b',
+      backgroundColor: palette1.background_light,
       opacity: 1,
     });
   };
@@ -63,18 +64,18 @@ const styles = StyleSheet.create({
   container: {
     marginVertical: 7,
     width: '60%',
+    backgroundColor: palette1.background,
     borderWidth: 1,
-    borderColor: '#bbefed',
+    borderColor: palette1.background_light,
     borderRadius: 30,
     paddingVertical: 10,
-    backgroundColor: '#043fa7',
     alignItems: 'center',
     justifyContent: 'space-between',
   },
   text: {
     fontSize: 15,
     // fontWeight: 'bold',
-    color: '#e7f9f9',
+    color: palette1.text,
   },
   shadowBox: {
     ...Platform.select({

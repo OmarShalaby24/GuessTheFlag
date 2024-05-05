@@ -1,30 +1,34 @@
 import React, {Children} from 'react';
-import type {PropsWithChildren} from 'react';
+import type {PropsWithChildren, ReactNode} from 'react';
 import {View, StyleSheet, Platform} from 'react-native';
 import HeaderBadge from './headerBadge';
+import {palette1} from '../colors';
 
-type HeaderProps = PropsWithChildren<{
-  numberOfQuestions: number;
-  questionCounter: number;
-  correctAnswers: number;
-  timer: number;
-}>;
+type HeaderProps = {
+  children?: ReactNode;
+  // numberOfQuestions: number;
+  // questionCounter: number;
+  // correctAnswers: number;
+  // timer: number;
+};
 
-const Header = ({
-  numberOfQuestions,
-  questionCounter,
-  correctAnswers,
-  timer,
-}: HeaderProps): React.JSX.Element => {
-  const timeValue = timer > 9 ? timer : '0' + timer;
+const Header: React.FC<HeaderProps> = ({
+  children,
+}: // numberOfQuestions,
+// questionCounter,
+// correctAnswers,
+// timer,
+HeaderProps) => {
+  // const timeValue = timer > 9 ? timer : '0' + timer;
   return (
     <View style={[styles.container, styles.shadowBox]}>
-      <HeaderBadge
+      {children}
+      {/* <HeaderBadge
         title={'Answered'}
         value={questionCounter + '/' + numberOfQuestions}
       />
       <HeaderBadge title={'Correct'} value={correctAnswers} />
-      <HeaderBadge title={'Timer'} value={`00:${timeValue}`} />
+      <HeaderBadge title={'Timer'} value={`00:${timeValue}`} /> */}
     </View>
   );
 };
@@ -33,9 +37,10 @@ export default Header;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#4eadd9',
+    backgroundColor: palette1.background_light,
     paddingHorizontal: 10,
     paddingVertical: 10,
+    height: 50,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-around',

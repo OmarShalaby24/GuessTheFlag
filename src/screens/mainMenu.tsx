@@ -4,6 +4,7 @@ import {View, StyleSheet} from 'react-native';
 import Button from '../components/button';
 import TextFiled from '../assets/common/Text.tsx';
 import LoadingScreen from '../components/loadingScreen.tsx';
+import {palette1} from '../colors.ts';
 
 import {CountryClass, QuestionClass, RootStackParamList} from '../types.ts';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
@@ -20,8 +21,6 @@ type Props = {
 
 const MainMenu: React.FC<Props> = ({navigation, route}: Props) => {
   const {countries} = route.params;
-  // const [countries, setCountries] = useState<CountryClass[]>([]);
-  // const [isDataLoaded, setIsDataLoaded] = useState(false);
   const handleStartGame = async () => {
     console.log('start game');
     generateQuiz(countries)
@@ -52,25 +51,6 @@ const MainMenu: React.FC<Props> = ({navigation, route}: Props) => {
     });
   };
 
-  // const loadCountries = () => {
-  //   return new Promise<CountryClass[]>((resolve, reject) => {
-  //     const c: {
-  //       name: string;
-  //       code: string;
-  //       flag: string;
-  //     }[] = require('../utils/countries_data.json');
-  //     resolve(c);
-  //   });
-  // };
-
-  // useEffect(() => {
-  //   // navigation.pop();
-  //   // loadCountries().then((result: CountryClass[]) => {
-  //   //   setCountries(result);
-  //   // });
-  //   // setIsDataLoaded(true);
-  // }, []);
-
   return (
     <View style={styles.container}>
       <View style={styles.title}>
@@ -95,7 +75,7 @@ export default MainMenu;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#bbefed',
+    backgroundColor: palette1.background,
     height: '100%',
   },
   title: {
@@ -103,25 +83,26 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   text: {
-    color: '#043fa7',
+    color: palette1.text,
     fontSize: 50,
     // fontFamily: 'ConcertOne-Regular',
     // fontFamily: 'Fonarto',
     textAlign: 'center',
     textShadowOffset: {width: 3, height: 3},
-    textShadowRadius: 10,
-    textShadowColor: '#010a4b',
+    textShadowRadius: 5,
+    textShadowColor: '#000',
   },
   GameName: {
-    color: '#e7f9f9',
+    color: palette1.logo,
     fontFamily: 'Fonarto',
-    textShadowOffset: {width: 3, height: 3},
+    // textShadowOffset: {width: 3, height: 3},
+    // textShadowRadius: 5,
     letterSpacing: 5,
     fontSize: 110,
   },
   subText: {
-    textShadowOffset: {width: 1, height: 1},
-    textShadowRadius: 2,
+    // textShadowOffset: {width: 2, height: 2},
+    // textShadowRadius: 20,
     fontSize: 20,
     marginVertical: -5,
   },

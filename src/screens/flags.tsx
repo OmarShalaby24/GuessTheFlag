@@ -9,6 +9,8 @@ import Footer from '../components/footer';
 import Button from '../components/button';
 import LoadingScreen from '../components/loadingScreen';
 import Header from '../components/header';
+import {palette1} from '../colors';
+import HeaderBadge from '../components/headerBadge';
 
 type FlagsProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'FlagsScreen'>;
@@ -16,9 +18,10 @@ type FlagsProps = {
 };
 
 const Flags: React.FC<FlagsProps> = ({navigation, route}: FlagsProps) => {
-  const [countries, setCountries] = useState<CountryClass[]>(
-    route.params.countries,
-  );
+  const [countries, setCountries] = useState<CountryClass[]>([]);
+  // const [countries, setCountries] = useState<CountryClass[]>(
+  //   route.params.countries,
+  // );
   const loadCountries = () => {
     return new Promise<CountryClass[]>((resolve, reject) => {
       const c: {
@@ -41,18 +44,21 @@ const Flags: React.FC<FlagsProps> = ({navigation, route}: FlagsProps) => {
         <LoadingScreen />
       ) : (
         <View>
+          <Header>
+            <HeaderBadge style={{width: 100}} title={'Flags'} />
+            {/* <TextFiled style={{fontSize: 20, color: palette1.logo}}>
+              Flags
+            </TextFiled> */}
+          </Header>
           <FlatList
             data={countries}
             numColumns={3}
             style={{width: '100%'}}
-            windowSize={5}
+            // windowSize={5}
+
             keyExtractor={item => item.code}
-            contentContainerStyle={{
-              justifyContent: 'space-between',
-              paddingBottom: 50,
-              alignItems: 'center',
-            }}
-            initialNumToRender={6}
+            contentContainerStyle={styles.list}
+            // initialNumToRender={6}
             renderItem={({item}) => <FlagCard country={item} />}
           />
           <View style={styles.btnContainer}>
@@ -67,6 +73,7 @@ const Flags: React.FC<FlagsProps> = ({navigation, route}: FlagsProps) => {
 const styles = StyleSheet.create({
   container: {
     height: '100%',
+    backgroundColor: palette1.background,
   },
   btnContainer: {
     // borderWidth: 1,
@@ -74,8 +81,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     position: 'absolute',
-    bottom: 0,
+    bottom: 50,
     // marginHorizontal: Dimensions.get('screen').width / 2,
+  },
+  list: {
+    justifyContent: 'space-between',
+    paddingBottom: 100,
+    alignItems: 'center',
   },
 });
 

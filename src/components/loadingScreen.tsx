@@ -1,12 +1,13 @@
 import React from 'react';
 import {ActivityIndicator, Image, StyleSheet, View} from 'react-native';
 import TextFiled from '../assets/common/Text';
+import {palette1} from '../colors';
 
 const LoadingScreen = () => {
   return (
     <View style={styles.loadingView}>
       <TextFiled style={[styles.text, styles.loadingText]}>Loading</TextFiled>
-      <ActivityIndicator size="small" color="#010a4b" animating />
+      <ActivityIndicator size="small" color={palette1.logo} animating />
     </View>
   );
 };
@@ -17,7 +18,7 @@ const styles = StyleSheet.create({
     top: 0,
     right: 0,
     width: '100%',
-    backgroundColor: 'rgba(187, 239, 237 ,0.3)',
+    backgroundColor: palette1.background,
     alignItems: 'center',
     justifyContent: 'center',
     height: '100%',
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     fontSize: 50,
   },
   text: {
-    color: '#043fa7',
+    color: palette1.logo,
   },
 });
 

@@ -3,6 +3,7 @@ import type {PropsWithChildren} from 'react';
 
 import {TouchableOpacity, StyleSheet, Platform} from 'react-native';
 import TextFiled from '../assets/common/Text';
+import {palette1} from '../colors';
 
 type ButtonProps = PropsWithChildren<{
   Label: string;
@@ -14,7 +15,7 @@ const Button = ({Label, onPress}: ButtonProps): React.JSX.Element => {
   const onPressIn = () => {
     setButtonStyle({
       ...buttonStyle,
-      backgroundColor: '#010a4b',
+      backgroundColor: palette1.background_light,
       opacity: 1,
     });
   };
@@ -41,14 +42,14 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     marginVertical: 7,
     borderWidth: 1,
-    borderColor: '#bbefed',
+    borderColor: palette1.background_light,
     borderRadius: 30,
     paddingVertical: 12,
-    backgroundColor: '#043fa7',
+    backgroundColor: palette1.background,
   },
   btnText: {
     fontSize: 15,
-    color: '#e7f9f9',
+    color: palette1.text,
   },
   shadowBox: {
     ...Platform.select({

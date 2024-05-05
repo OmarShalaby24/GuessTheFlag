@@ -13,6 +13,8 @@ import type {
 } from '../types';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
 import Questions from '../components/questions';
+import {palette1} from '../colors';
+import HeaderBadge from '../components/headerBadge';
 
 type QuizProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'QuizScreen'>;
@@ -71,12 +73,15 @@ const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
         <LoadingScreen />
       ) : (
         <>
-          <Header
-            numberOfQuestions={10}
+          <Header>
+            <HeaderBadge title="Answered : " value={`${questionNumber} / 10`} />
+            <HeaderBadge title="Correct : " value={correctAnswers} />
+            <HeaderBadge title="Timer : " value={`00:${timeCountDown}`} />
+          </Header>
+          {/* numberOfQuestions={10}
             correctAnswers={correctAnswers}
             questionCounter={questionNumber}
-            timer={timeCountDown}
-          />
+            timer={timeCountDown} */}
           <Questions
             quiz={quiz}
             updateQuizState={updateQuizState}
@@ -95,7 +100,7 @@ export default Quiz;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#bbefed',
+    backgroundColor: palette1.background,
     justifyContent: 'space-between',
     height: '100%',
   },

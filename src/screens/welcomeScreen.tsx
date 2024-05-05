@@ -3,6 +3,7 @@ import {Animated, StyleSheet, View} from 'react-native';
 import TextFiled from '../assets/common/Text';
 import {CountryClass, RootStackParamList} from '../types';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {palette1} from '../colors';
 
 type WelcomeScreenProps = {
   navigation: NativeStackNavigationProp<RootStackParamList, 'MainMenuScreen'>;
@@ -67,10 +68,11 @@ const styles = StyleSheet.create({
     width: '100%',
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#bbefed',
+    backgroundColor: palette1.background,
   },
   welcomeText: {
     fontSize: 50,
+    color: palette1.logo,
   },
 });
 export default WelcomeScreen;

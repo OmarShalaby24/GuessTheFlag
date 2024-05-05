@@ -9,6 +9,7 @@ import {
   View,
 } from 'react-native';
 import {CountryClass} from '../types';
+import {palette1} from '../colors';
 
 type Props = {
   right: CountryClass;
@@ -16,19 +17,19 @@ type Props = {
 };
 
 const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
-  const [fontColor, setFontColor] = useState('#018e42');
+  const [fontColor, setFontColor] = useState(palette1.background);
   useEffect(() => {
     setFontColor(picked.name !== right.name ? '#bf1a2f' : '#018e42');
   });
   return (
-    <View style={[styles.container, styles.shadowBox]} key="card">
+    <View
+      style={[styles.container, styles.shadowBox, {borderColor: fontColor}]}
+      key="card">
       <View
         style={[styles.symbol, styles.shadowBox, {backgroundColor: fontColor}]}>
-        <TextFiled style={{color: '#fff'}}>
-          {picked.name === right.name ? '✔' : '✘'}
-        </TextFiled>
+        <TextFiled>{picked.name === right.name ? '✔' : '✘'}</TextFiled>
       </View>
-      <View style={{width: '90%'}}>
+      <View style={{flex: 1}}>
         <View style={styles.result}>
           <View
             style={{
@@ -42,7 +43,7 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
               <Image style={[styles.image]} source={{uri: right.flag}} />
             </TouchableOpacity>
             <View style={styles.countryName}>
-              <TextFiled style={{color: fontColor}}>{right.name}</TextFiled>
+              <TextFiled>{right.name}</TextFiled>
             </View>
           </View>
           {picked.name !== right.name ? (
@@ -58,7 +59,7 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
                 <Image style={styles.image} source={{uri: picked.flag}} />
               </TouchableOpacity>
               <View style={styles.countryName}>
-                <TextFiled style={{color: fontColor}}>{picked.name}</TextFiled>
+                <TextFiled>{picked.name}</TextFiled>
               </View>
             </View>
           ) : null}
@@ -78,16 +79,17 @@ const styles = StyleSheet.create({
     marginTop: 10,
     marginBottom: 10,
     // marginHorizontal: 30,
-    backgroundColor: '#fff',
+    backgroundColor: palette1.background_light,
     borderRadius: 15,
     paddingVertical: 10,
     paddingHorizontal: 5,
-    borderWidth: 1,
+    borderWidth: 2,
+    height: Dimensions.get('screen').height / 6,
     width: (Dimensions.get('screen').width * 14) / 15,
   },
   image: {
     borderWidth: 1,
-    borderColor: '#000',
+    borderColor: palette1.background,
     borderRadius: 5,
     width: Dimensions.get('screen').width / 4,
     aspectRatio: 9 / 5,

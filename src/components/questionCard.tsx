@@ -9,7 +9,9 @@ import {
   View,
 } from 'react-native';
 import TextFiled from '../assets/common/Text';
+import {palette1} from '../colors';
 type QuestionCardProps = PropsWithChildren<{
+  questionHead: string;
   country: string;
 }>;
 
@@ -17,12 +19,15 @@ type QuestionCardProps = PropsWithChildren<{
 
 const defaultImage = '../assets/images/flags/eg.png';
 
-const QuestionCard = ({country}: QuestionCardProps): React.JSX.Element => {
+const QuestionCard = ({
+  country,
+  questionHead,
+}: QuestionCardProps): React.JSX.Element => {
   // country = country !== undefined ? country : require('../assets/images/flags/eg.png')
   return (
     <View style={[styles.container, styles.shadowBox]}>
       <View style={styles.title}>
-        <TextFiled style={styles.question}>Guess the Country's Flag:</TextFiled>
+        <TextFiled style={styles.question}>{questionHead}</TextFiled>
       </View>
       <View style={[styles.imageContainer, styles.shadowBox]}>
         {country !== undefined ? (
@@ -44,10 +49,11 @@ export default QuestionCard;
 const styles = StyleSheet.create({
   container: {
     marginVertical: 5,
-    backgroundColor: '#e7f9f9',
+    backgroundColor: palette1.background_light,
     alignItems: 'center',
     borderRadius: 20,
     borderColor: 'black',
+    width: (Dimensions.get('window').width * 8) / 10,
   },
   title: {
     alignItems: 'center',
@@ -56,6 +62,7 @@ const styles = StyleSheet.create({
   },
   question: {
     fontSize: 20,
+    color: palette1.background,
   },
   image: {
     borderColor: 'black',
