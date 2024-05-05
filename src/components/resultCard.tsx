@@ -60,7 +60,6 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
                 marginHorizontal: 0,
                 alignItems: 'center',
               }}>
-              {/* <Icon name="close" color={'#bf1a2f'} /> */}
               <TouchableOpacity disabled style={styles.shadowBox}>
                 <Image
                   style={[

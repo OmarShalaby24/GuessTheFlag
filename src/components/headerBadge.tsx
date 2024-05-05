@@ -8,16 +8,17 @@ type HeaderBadgeProps = PropsWithChildren<{
   title?: string | number;
   value?: string | number;
   style?: {};
+  textStyle?: {};
 }>;
 
-const HeaderBadge = ({title, value, style}: HeaderBadgeProps) => {
+const HeaderBadge = ({title, value, style, textStyle}: HeaderBadgeProps) => {
   return (
     <View style={[styles.badge, styles.shadowBox, style]}>
       {title !== undefined ? (
-        <TextFiled style={styles.text}>{title}</TextFiled>
+        <TextFiled style={[styles.text, textStyle]}>{title}</TextFiled>
       ) : null}
       {value !== undefined ? (
-        <TextFiled style={styles.text}>{value}</TextFiled>
+        <TextFiled style={[styles.text, textStyle]}>{value}</TextFiled>
       ) : null}
     </View>
   );

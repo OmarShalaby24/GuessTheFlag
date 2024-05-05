@@ -60,15 +60,19 @@ const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
   };
 
   const [timeCountDown, setTimeCountDown] = useState<number>(59);
-
   useEffect(() => {
     setIsLoading(false);
     setInterval(() => {
       setTimeCountDown(prev => prev - 1);
     }, 1000);
   }, []);
-
+  const [timerStyle, setTimerStyle] = useState({});
   useEffect(() => {
+    if (timeCountDown <= 10) {
+      setTimerStyle({
+        color: '#bf1a2f',
+      });
+    }
     if (timeCountDown === 0) {
       setIsLoading(true);
       endQuiz();
@@ -87,6 +91,8 @@ const Quiz: React.FC<QuizProps> = ({navigation, route}: QuizProps) => {
             <HeaderBadge title="Answered : " value={`${questionNumber} / 10`} />
             <HeaderBadge title="Correct : " value={correctAnswers} />
             <HeaderBadge
+              style={timeCountDown <= 10 ? {borderColor: '#bf1a2f'} : {}}
+              textStyle={timerStyle}
               title="Timer : "
               value={
                 timeCountDown > 9

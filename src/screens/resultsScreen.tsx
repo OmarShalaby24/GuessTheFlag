@@ -55,6 +55,8 @@ const ResultsScreen: React.FC<ResultsProps> = ({
         <HeaderBadge title="Correct : " value={correctAnswersBadge} />
         <HeaderBadge
           title="Timer : "
+          style={timeCountDownBadge <= 10 ? {borderColor: '#bf1a2f'} : {}}
+          textStyle={timeCountDownBadge <= 10 ? {color: '#bf1a2f'} : {}}
           value={
             timeCountDownBadge > 9
               ? `00:${timeCountDownBadge}`
