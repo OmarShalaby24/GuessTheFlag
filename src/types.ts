@@ -9,6 +9,7 @@ export type RootStackParamList = {
     results: ResultRecord[];
   };
   FlagsScreen: {countries: CountryClass[]};
+  AboutScreen: undefined;
 };
 
 // export type MainMenuParamList = {

@@ -20,7 +20,7 @@ type Props = {
 const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
   const [fontColor, setFontColor] = useState(palette1.background);
   useEffect(() => {
-    setFontColor(picked.name !== right.name ? '#bf1a2f' : '#018e42');
+    setFontColor(picked.name !== right.name ? palette1.red : palette1.green);
   });
   return (
     <View
@@ -43,15 +43,20 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
               marginHorizontal: 0,
               alignItems: 'center',
             }}>
-            {/* <Icon name="check" color={'#018e42'} /> */}
+            {/* <Icon name="check" color={palette1.green} /> */}
             <TouchableOpacity disabled style={styles.shadowBox}>
               <Image
-                style={[styles.image, {borderColor: '#018e42', borderWidth: 2}]}
+                style={[
+                  styles.image,
+                  {borderColor: palette1.green, borderWidth: 2},
+                ]}
                 source={{uri: right.flag}}
               />
             </TouchableOpacity>
             <View style={styles.countryName}>
-              <TextFiled style={{color: '#018e42'}}>{right.name}</TextFiled>
+              <TextFiled style={{color: palette1.green}}>
+                {right.name}
+              </TextFiled>
             </View>
           </View>
           {picked.name !== right.name ? (
@@ -64,13 +69,15 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
                 <Image
                   style={[
                     styles.image,
-                    {borderColor: '#bf1a2f', borderWidth: 2},
+                    {borderColor: palette1.red, borderWidth: 2},
                   ]}
                   source={{uri: picked.flag}}
                 />
               </TouchableOpacity>
               <View style={styles.countryName}>
-                <TextFiled style={{color: '#bf1a2f'}}>{picked.name}</TextFiled>
+                <TextFiled style={{color: palette1.red}}>
+                  {picked.name}
+                </TextFiled>
               </View>
             </View>
           ) : null}

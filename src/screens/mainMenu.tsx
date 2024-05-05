@@ -35,6 +35,7 @@ const MainMenu: React.FC<Props> = ({navigation, route}: Props) => {
   };
   const handleAbout = () => {
     console.log('About the App');
+    navigation.navigate('AboutScreen');
   };
 
   const generateQuiz = (options: CountryClass[] | []) => {

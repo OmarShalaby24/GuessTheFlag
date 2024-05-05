@@ -9,4 +9,6 @@ export const palette1 = {
   color2: '#747163',
   color3: '#615026',
   color4: '#9b823a',
+  red: '#bf1a2f',
+  green: '#018e42',
 };
