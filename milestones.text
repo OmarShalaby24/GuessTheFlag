@@ -15,3 +15,7 @@ Load Images on startup:
 Lock AutoRotation:
   - open: android\app\src\main\AndroidManifest.xml
   - add this line -> android:screenOrientation="portrait" 
+
+Add icons to iOS:
+  - https://www.npmjs.com/package/react-native-vector-icons
+  

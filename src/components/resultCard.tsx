@@ -8,6 +8,7 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import {CountryClass} from '../types';
 import {palette1} from '../colors';
 
@@ -27,7 +28,13 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
       key="card">
       <View
         style={[styles.symbol, styles.shadowBox, {backgroundColor: fontColor}]}>
-        <TextFiled>{picked.name === right.name ? '✔' : '✘'}</TextFiled>
+        <TextFiled>
+          {picked.name === right.name ? (
+            <Icon name="check" />
+          ) : (
+            <Icon name="close" />
+          )}
+        </TextFiled>
       </View>
       <View style={{flex: 1}}>
         <View style={styles.result}>
@@ -36,14 +43,15 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
               marginHorizontal: 0,
               alignItems: 'center',
             }}>
-            <TextFiled style={{fontSize: 15, color: fontColor}}>
-              Correct
-            </TextFiled>
-            <TouchableOpacity style={styles.shadowBox}>
-              <Image style={[styles.image]} source={{uri: right.flag}} />
+            {/* <Icon name="check" color={'#018e42'} /> */}
+            <TouchableOpacity disabled style={styles.shadowBox}>
+              <Image
+                style={[styles.image, {borderColor: '#018e42', borderWidth: 2}]}
+                source={{uri: right.flag}}
+              />
             </TouchableOpacity>
             <View style={styles.countryName}>
-              <TextFiled>{right.name}</TextFiled>
+              <TextFiled style={{color: '#018e42'}}>{right.name}</TextFiled>
             </View>
           </View>
           {picked.name !== right.name ? (
@@ -52,14 +60,18 @@ const ResultCard: React.FC<Props> = ({picked, right}: Props) => {
                 marginHorizontal: 0,
                 alignItems: 'center',
               }}>
-              <TextFiled style={{fontSize: 15, color: fontColor}}>
-                You Picked
-              </TextFiled>
-              <TouchableOpacity style={styles.shadowBox}>
-                <Image style={styles.image} source={{uri: picked.flag}} />
+              {/* <Icon name="close" color={'#bf1a2f'} /> */}
+              <TouchableOpacity disabled style={styles.shadowBox}>
+                <Image
+                  style={[
+                    styles.image,
+                    {borderColor: '#bf1a2f', borderWidth: 2},
+                  ]}
+                  source={{uri: picked.flag}}
+                />
               </TouchableOpacity>
               <View style={styles.countryName}>
-                <TextFiled>{picked.name}</TextFiled>
+                <TextFiled style={{color: '#bf1a2f'}}>{picked.name}</TextFiled>
               </View>
             </View>
           ) : null}
