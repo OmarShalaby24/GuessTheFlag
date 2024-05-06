@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     backgroundColor: palette1.text,
     borderRadius: 10,
     width: Dimensions.get('screen').width / 3.5,
-    height: Dimensions.get('screen').height / 5.5,
+    height: Dimensions.get('screen').height / 5.8,
     alignItems: 'center',
     margin: 5,
     marginBottom: 20,
@@ -53,11 +53,11 @@ const styles = StyleSheet.create({
   imageContainer: {
     width: Dimensions.get('window').width / 4,
     aspectRatio: 13 / 8,
-    borderRadius: 10,
+    // borderWidth: 1,
+    borderRadius: 11,
   },
   image: {
     flex: 1,
-    borderWidth: 1,
     borderRadius: 10,
   },
   shadowBox: {

@@ -8,12 +8,14 @@ import {palette1} from '../colors';
 
 type OptionProps = PropsWithChildren<{
   value: CountryClass;
+  answer: CountryClass;
   checkAnswer: Function;
   // questionNumber: number;
 }>;
 
 const Option: React.FC<OptionProps> = ({
   value,
+  answer,
   checkAnswer,
   // questionNumber,
 }) => {
@@ -35,7 +37,8 @@ const Option: React.FC<OptionProps> = ({
     });
   };
   const isCorrect = (option: CountryClass) => {
-    if (checkAnswer(option)) {
+    const correct = option.name === answer.name;
+    if (correct) {
       setButtonStyle({
         ...buttonStyle,
         backgroundColor: '#018e42',
@@ -46,6 +49,7 @@ const Option: React.FC<OptionProps> = ({
         backgroundColor: '#bf1a2f',
       });
     }
+    checkAnswer(option);
   };
   return (
     <TouchableOpacity

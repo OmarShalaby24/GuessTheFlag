@@ -18,7 +18,7 @@ const Question = ({
   const {answer, options} = question;
   const isCorrect = (selection: CountryClass) => {
     handleSelection(answer.name === selection.name, selection);
-    return answer.name === selection.name;
+    // return answer.name === selection.name;
   };
   return (
     <View style={styles.container}>
@@ -27,7 +27,12 @@ const Question = ({
         questionHead="Guess the Country's Flag:"
       />
       {options.map((option: CountryClass) => (
-        <Option key={option.name} value={option} checkAnswer={isCorrect} />
+        <Option
+          key={option.name}
+          value={option}
+          answer={answer}
+          checkAnswer={isCorrect}
+        />
       ))}
     </View>
   );

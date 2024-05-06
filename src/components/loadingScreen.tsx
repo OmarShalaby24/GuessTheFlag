@@ -20,36 +20,25 @@ const LoadingScreen = () => {
 
 const styles = StyleSheet.create({
   loadingView: {
-    position: 'absolute',
-    top: 0,
-    right: 0,
+    // // position: 'absolute',
+    // top: 0,
+    // right: 0,
     width: '100%',
+    height: '100%',
     backgroundColor: palette1.background,
     alignItems: 'center',
     justifyContent: 'center',
-    height: '100%',
   },
   loadingText: {
     fontSize: 40,
+    paddingHorizontal: 50,
+    paddingVertical: 10,
   },
   text: {
     color: palette1.logo,
-    textShadowOffset: {width: 3, height: 3},
-    textShadowRadius: 5,
+    textShadowOffset: {width: 1, height: 1},
+    textShadowRadius: 3,
     textShadowColor: '#000',
-  },
-  shadowBox: {
-    ...Platform.select({
-      ios: {
-        shadowColor: '#000',
-        shadowOffset: {width: 0, height: 2},
-        shadowOpacity: 0.8,
-        shadowRadius: 2,
-      },
-      android: {
-        elevation: 5,
-      },
-    }),
   },
 });
 

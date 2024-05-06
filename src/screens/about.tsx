@@ -20,7 +20,7 @@ const About: React.FC<AboutProps> = ({navigation}) => {
           style={[
             styles.subText,
             styles.title,
-            {fontSize: 40, color: palette1.logo},
+            {fontSize: 40, color: palette1.logo, paddingBottom: 20},
           ]}>{`Guess The Flag`}</TextFiled>
       </View>
       <ScrollView
@@ -31,9 +31,10 @@ const About: React.FC<AboutProps> = ({navigation}) => {
           paddingRight: 10,
         }}>
         <View style={styles.paragraphContainer}>
-          <TextFiled style={[styles.text, styles.title]}>Game modes:</TextFiled>
+          <TextFiled
+            style={[styles.text, styles.title]}>{`Game modes :`}</TextFiled>
           <View style={styles.paragraphContainer}>
-            <TextFiled style={styles.text}>{`- Normal mode:`}</TextFiled>
+            <TextFiled style={styles.text}>{`- Classic mode :`}</TextFiled>
             <View style={styles.paragraphContainer}>
               <TextFiled
                 style={[
@@ -44,7 +45,7 @@ const About: React.FC<AboutProps> = ({navigation}) => {
           </View>
           <View style={styles.paragraphContainer}>
             <TextFiled
-              style={styles.text}>{`- 3-lives mode  (coming soon)`}</TextFiled>
+              style={styles.text}>{`- 3-lives mode : (coming soon)`}</TextFiled>
             <View style={styles.paragraphContainer}>
               <TextFiled
                 style={[
@@ -69,7 +70,7 @@ const About: React.FC<AboutProps> = ({navigation}) => {
         </View>
         <View style={styles.paragraphContainer}>
           <TextFiled style={[styles.text, styles.title]}>
-            {`Who Am I:`}
+            {`Who Am I :`}
           </TextFiled>
           <View style={styles.paragraphContainer}>
             <TextFiled
