@@ -2,9 +2,9 @@ import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 
 import {StyleSheet, TouchableOpacity, Platform} from 'react-native';
-import TextFiled from '../assets/common/Text';
-import {CountryClass} from '../types';
-import {palette1} from '../colors';
+import TextFiled from '../../assets/common/Text';
+import {CountryClass} from '../../types';
+import {palette1} from '../../colors';
 
 type OptionProps = PropsWithChildren<{
   value: CountryClass;

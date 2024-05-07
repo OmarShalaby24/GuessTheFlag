@@ -60,7 +60,7 @@ const MainMenu: React.FC<Props> = ({navigation, route}: Props) => {
       }[]
     >((resolve, reject) => {
       //FIXME: make it 10 questions
-      const q = makeQuiz(10, options);
+      const q = makeQuiz(4, 10, options);
       resolve(q);
       reject(new Error());
     });

@@ -4,7 +4,7 @@ import type {PropsWithChildren} from 'react';
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
 import Option from './option';
 import QuestionCard from './questionCard';
-import {CountryClass, QuestionClass} from '../types';
+import {CountryClass, QuestionClass} from '../../types';
 
 type QuestionProps = PropsWithChildren<{
   question: QuestionClass;

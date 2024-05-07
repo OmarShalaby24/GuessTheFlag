@@ -8,8 +8,8 @@ import {
   Text,
   View,
 } from 'react-native';
-import TextFiled from '../assets/common/Text';
-import {palette1} from '../colors';
+import TextFiled from '../../assets/common/Text';
+import {palette1} from '../../colors';
 type QuestionCardProps = PropsWithChildren<{
   questionHead: string;
   country: string;

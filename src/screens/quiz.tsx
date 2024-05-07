@@ -12,7 +12,7 @@ import type {
   RootStackParamList,
 } from '../types';
 import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import Questions from '../components/questions';
+import Questions from '../components/QuizComponents/questions';
 import {palette1} from '../colors';
 import HeaderBadge from '../components/headerBadge';
 

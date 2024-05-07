@@ -1,6 +1,6 @@
 import React, {useCallback, useRef, useState} from 'react';
 import {FlatList, SafeAreaView, StyleSheet} from 'react-native';
-import {CountryClass, QuestionClass} from '../types';
+import {CountryClass, QuestionClass} from '../../types';
 import Question from './question';
 
 interface QuestionsProps {
@@ -78,7 +78,7 @@ const Questions: React.FC<QuestionsProps> = ({
 
 const styles = StyleSheet.create({
   questionSlide: {
-    height: '70%',
+    // height: '70%',
     marginVertical: 20,
   },
 });
