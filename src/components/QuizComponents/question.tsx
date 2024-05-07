@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import type {PropsWithChildren} from 'react';
 
 import {View, Text, StyleSheet, Dimensions} from 'react-native';
@@ -16,10 +16,13 @@ const Question = ({
   handleSelection,
 }: QuestionProps): React.JSX.Element => {
   const {answer, options} = question;
-  const isCorrect = (selection: CountryClass) => {
+  const [disableOption, setDisableOption] = useState(false);
+
+  const answerQuestion = (selection: CountryClass) => {
+    setDisableOption(true);
     handleSelection(answer.name === selection.name, selection);
-    // return answer.name === selection.name;
   };
+
   return (
     <View style={styles.container}>
       <QuestionCard
@@ -28,10 +31,11 @@ const Question = ({
       />
       {options.map((option: CountryClass) => (
         <Option
+          disabled={disableOption}
           key={option.name}
           value={option}
           answer={answer}
-          checkAnswer={isCorrect}
+          checkAnswer={answerQuestion}
         />
       ))}
     </View>

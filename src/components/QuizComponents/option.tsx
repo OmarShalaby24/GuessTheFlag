@@ -10,6 +10,7 @@ type OptionProps = PropsWithChildren<{
   value: CountryClass;
   answer: CountryClass;
   checkAnswer: Function;
+  disabled?: boolean;
   // questionNumber: number;
 }>;
 
@@ -17,6 +18,7 @@ const Option: React.FC<OptionProps> = ({
   value,
   answer,
   checkAnswer,
+  disabled,
   // questionNumber,
 }) => {
   const [buttonStyle, setButtonStyle] = useState<{}>({
@@ -53,6 +55,7 @@ const Option: React.FC<OptionProps> = ({
   };
   return (
     <TouchableOpacity
+      disabled={disabled}
       style={buttonStyle}
       onPressIn={onPressIn}
       onPressOut={onPressOut}
