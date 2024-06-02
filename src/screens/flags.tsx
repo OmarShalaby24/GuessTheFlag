@@ -84,7 +84,7 @@ const Flags: React.FC<FlagsProps> = ({navigation, route}: FlagsProps) => {
           <FlatList
             data={searchResult}
             numColumns={3}
-            style={{width: '100%'}}
+            style={{width: '100%', height: '100%'}}
             // windowSize={5}
 
             keyExtractor={item => item.code}

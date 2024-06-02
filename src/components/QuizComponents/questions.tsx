@@ -60,7 +60,7 @@ const Questions: React.FC<QuestionsProps> = ({
         data={quiz}
         horizontal={true}
         ref={flatListRef}
-        keyExtractor={item => item.answer.name}
+        // keyExtractor={item => item.answer.name}
         showsHorizontalScrollIndicator={false}
         scrollEnabled={false}
         pagingEnabled={true}

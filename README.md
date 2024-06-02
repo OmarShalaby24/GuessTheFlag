@@ -1,28 +1,61 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Guess The Flag
 
-# Getting Started
+##### Quiz Game
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+| Classic Mode                                                           | Flags                                                                      |
+| ---------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| <img src="src\assets\gif\classic.gif" alt="classic mode" width="300"/> | <img src="src\assets\gif\flags-about.gif" alt="classic mode" width="300"/> |
 
-## Step 1: Start the Metro Server
+## Table of Contents
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- [Description](#description)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Description
+
+Welcome to the Guess The Flag! This is a mobile application built with React Native that allows users to test their countries flags knowledge through a series of quiz questions. The game is designed to be fun, educational, and engaging for users of all ages.
+
+## Features
+
+- Multiple categories of quiz questions
+  - Classic Mode
+  - 3-Lives Mode (coming soon)
+  - Pin Location Mode (coming soon)
+  - Multiplayer (coming soon)
+- Timed quiz sessions
+- Score tracking
+- Leaderboard to compare scores with other players
+- User-friendly interface
+- Works on both Android and iOS devices
+
+## Installation
+
+To get started with the React Native Quiz Game, follow these steps:
+
+#### 1. Clone the repository
 
 ```bash
-# using npm
-npm start
-
-# OR using Yarn
-yarn start
+git clone https://github.com/OmarShalaby24/GuessTheFlag.git
+cd GuessTheFlag
 ```
 
-## Step 2: Start your Application
+#### 2. Install dependencies
+
+```bash
+npm install
+# or if you're using yarn
+yarn install
+```
+
+#### 3. Run the application
 
 Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
 
-### For Android
+##### For Android
 
 ```bash
 # using npm
@@ -32,7 +65,7 @@ npm run android
 yarn android
 ```
 
-### For iOS
+##### For iOS
 
 ```bash
 # using npm
@@ -46,34 +79,19 @@ If everything is set up _correctly_, you should see your new app running in your
 
 This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
 
-## Step 3: Modifying your App
+## Usage
 
-Now that you have successfully run the app, let's modify it.
+Once you have the application running on your emulator or physical device, navigate through the app to select a quiz category and start answering questions. Track your progress and try to beat your high score!
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Contributing
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+You are welcome to contribute to Guess The Flag Game! To contribute:
 
-## Congratulations! :tada:
+1. Fork the repository
+2. Create a new branch (git checkout -b feature-branch)
+3. Make your changes
+4. Commit your changes (git commit -m 'Add some feature')
+5. Push to the branch (git push origin feature-branch)
+6. Open a pull request
 
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Please make sure to update tests as appropriate and follow the code of conduct.
