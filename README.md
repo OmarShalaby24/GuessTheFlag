@@ -1,6 +1,7 @@
 # Guess The Flag
 
-##### Quiz Game
+_Global Geography Challenge_
+<br>
 
 | Classic Mode                                                           | Flags                                                                      |
 | ---------------------------------------------------------------------- | -------------------------------------------------------------------------- |
@@ -13,11 +14,10 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Description
 
-Welcome to the Guess The Flag! This is a mobile application built with React Native that allows users to test their countries flags knowledge through a series of quiz questions. The game is designed to be fun, educational, and engaging for users of all ages.
+Welcome to the Guess The Flag! This is an offline mobile game built with React Native that allows users to test their countries flags knowledge through a series of quiz questions. The game is designed to be fun, educational, and engaging for users of all ages.
 
 ## Features
 
@@ -38,18 +38,14 @@ To get started with the React Native Quiz Game, follow these steps:
 
 #### 1. Clone the repository
 
-```bash
-git clone https://github.com/OmarShalaby24/GuessTheFlag.git
-cd GuessTheFlag
-```
+> git clone https://github.com/OmarShalaby24/GuessTheFlag.git
+> cd GuessTheFlag
 
 #### 2. Install dependencies
 
-```bash
-npm install
-# or if you're using yarn
-yarn install
-```
+> npm install
+> \# or if you're using yarn
+> yarn install
 
 #### 3. Run the application
 
@@ -57,23 +53,17 @@ Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _roo
 
 ##### For Android
 
-```bash
-# using npm
-npm run android
-
-# OR using Yarn
-yarn android
-```
+> \# using npm
+> npm run android
+> \# OR using Yarn
+> yarn android
 
 ##### For iOS
 
-```bash
-# using npm
-npm run ios
-
-# OR using Yarn
-yarn ios
-```
+> \# using npm
+> npm run ios
+> \# OR using Yarn
+> yarn ios
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
